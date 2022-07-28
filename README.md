@@ -6,7 +6,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
   
 **A note on the latest version of GNOME** - GNOME users may need to modify their desktop settings to get the System Tray to work, depending on your GNOME version and current settings.  
 
-**A note on Desktop Environments** - Scripts were tested on a customized GNOME 42 on Arch, Fedora, and Ubuntu. Scripts have not been tested on other environments yet (XFCE, KDE, etc.,)    
+**A note on Desktop Environments** - Scripts were tested on a customized GNOME 42 on Arch, Fedora, and Ubuntu. Scripts have not been tested on other environments yet (XFCE, KDE, etc.,) but *should* work    
   
 **A note on Keplr** - Currently researching possibilities of Keplr integration. At this point Keplr integration is not available.  
   
