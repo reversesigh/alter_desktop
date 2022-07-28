@@ -1,7 +1,7 @@
 ### ALTER_desktop  
 Create an ALTER desktop application using `nativefier`. This is intended to make it easy for ALTER users to have a desktop instance of ALTER without worrying about creating their own desktop entry. Scripts currently work with Linux distributions. Not tested on Windows or MacOS.    
   
-## Snap
+## snap
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
