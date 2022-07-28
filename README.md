@@ -1,4 +1,5 @@
 ### ALTER_desktop  
+Create an ALTER desktop application using `nativefier`  
   
 ## Snap  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
