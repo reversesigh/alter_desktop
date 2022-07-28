@@ -23,7 +23,7 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x snap_install.sh`  
+`chmod +x snap_install-x64.sh`  
 `./snap_install-x64.sh`  
   
 ## npm  
@@ -32,5 +32,5 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x npm_install.sh`  
-`./npm_install-c64.sh` 
+`chmod +x npm_install-x64.sh`  
+`./npm_install-x64.sh` 
