@@ -2,7 +2,9 @@
   
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
-Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`
+Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
+  
+GNOME users may need to modify their settings to get the System Tray to work, depending on your GNOME version.  
   
 #### Search for ALTER:  
 <p align="center">
