@@ -1,7 +1,7 @@
 ### ALTER_desktop  
 Create an unofficial [ALTER](https://altermail.live/) Linux desktop application using [`nativefier`](https://github.com/nativefier/nativefier). This is intended to make it easy for ALTER users to have a desktop instance of ALTER without worrying about creating their own desktop entry. Scripts currently work with Linux distributions. 
   
-<img src="ALTER_desktop.png" align="centeR">    
+<img src="ALTER_desktop.png" align="center">    
   
 ## snap
 `cd ~`  
