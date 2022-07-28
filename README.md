@@ -18,7 +18,7 @@ Create an unofficial [ALTER](https://altermail.live/) Linux desktop application 
 </P>  
   
 ## snap  
-### x64  
+#### x64  
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
@@ -26,7 +26,7 @@ Create an unofficial [ALTER](https://altermail.live/) Linux desktop application 
 `./snap_install-x64.sh`  
   
 ## npm  
-## x64  
+#### x64  
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
