@@ -1,4 +1,4 @@
-## ALTER_desktop  
+# ALTER_desktop  
   
 Create an unofficial [ALTER](https://altermail.live/) Linux desktop application using [`nativefier`](https://github.com/nativefier/nativefier).  
   
