@@ -4,17 +4,17 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`
   
-#### Adds ALTER to your applications list so you c search for it:  
+#### Search for ALTER:  
 <p align="center">
 <img src="ALTER_shell.png">
 </P>  
   
-#### Find it in your applications list  
+#### Find ALTER in your applications list  
 <p align="center">
 <img src="ALTER_applist.png">
 </P>  
   
-#### Pin it to your Dash
+#### Pin ALTER to your Dash
 <p align="center">
 <img src="ALTER_dash.png">
 </P>  
