@@ -10,7 +10,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
   
 **A note on Keplr** - Currently researching possibilities of Keplr integration. At this point Keplr integration is not available.  
   
-**A note on Windows/macOS** - ALTER_desktop is currently only available for `linux-x64` systems. Versions for Windows and macOS are planned.
+**A note on Windows/macOS** - `ALTER_desktop` is currently only available for `linux-x64` systems. Versions for Windows and macOS are planned.
 #### Search for ALTER:  
 <p align="center">
 <img src="ALTER_shell.png">
