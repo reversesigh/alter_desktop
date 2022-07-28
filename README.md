@@ -13,7 +13,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 **A note on Windows/macOS** - `ALTER_desktop` is currently only available for `linux-x64` systems. Versions for Windows and macOS are planned.  
   
 **A note on scripts** - For now scripts will place a `.desktop` file in your home directory (`~/.local/share/applications`) and place an ALTER icon in your root space. This was done because I discovered not every system has a `~/.icons` by default and breaks the script as it currently exists. Will work out best methods to include both in $HOME space eventually.  
-    
+    <br>
     
 #### Search for ALTER:  
 <p align="center">
