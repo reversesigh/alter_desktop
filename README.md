@@ -20,7 +20,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 <img src="ALTER_shell.png">
 </P>  
   
-#### Find ALTER in your applications list  
+#### Or find ALTER in your applications list  
 <p align="center">
 <img src="ALTER_applist.png">
 </P>  
