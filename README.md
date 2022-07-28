@@ -11,4 +11,4 @@ Create an ALTER desktop application using `nativefier`. Scripts currently work w
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x npm_install.sh`  
-`./snap_install.sh` 
+`./npm_install.sh` 
