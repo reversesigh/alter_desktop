@@ -2,7 +2,7 @@
   
 Create an unofficial [ALTER](https://altermail.live/) Linux desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
-#### Add ALTER to your application list
+#### Add ALTER to your applications list
 <p align="center">
 <img src="ALTER_shell.png">
 </P>  
