@@ -12,7 +12,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
   
 **A note on Windows/macOS** - `ALTER_desktop` is currently only available for `linux-x64` systems. Versions for Windows and macOS are planned.  
   
-    <br>
+    
     
 #### Search for ALTER:  
 <p align="center">
