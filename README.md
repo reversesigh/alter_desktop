@@ -4,8 +4,7 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`
   
-#### Adds ALTER to your applications list  
-Search for it:  
+#### Adds ALTER to your applications list so you c search for it:  
 <p align="center">
 <img src="ALTER_shell.png">
 </P>  
