@@ -7,12 +7,12 @@ Create an unofficial [ALTER](https://altermail.live/) Linux desktop application 
 <img src="ALTER_shell.png">
 </P>  
   
-## Use ALTER on your desktop with ease
+#### Use ALTER on your desktop with ease
 <p align="center">
 <img src="ALTER_desktop.png">   
 </p>  
   
-## Utilize the System Tray to hide ALTER when not in use
+#### Utilize the System Tray to hide ALTER when not in use
 <p align="center">
 <img src="ALTER_tray.png">
 </P>  
