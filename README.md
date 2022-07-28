@@ -18,7 +18,7 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
 </P>  
   
 ## snap  
-#### x64  
+#### linux-x64  
 ##### Installs `nativefier` using `snap` and wraps ALTER to an "app"
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
@@ -27,7 +27,7 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
 `./snap_install-x64.sh`  
   
 ## npm  
-#### x64  
+#### linux-x64  
 ##### Installs `nativefier` using `npm` and wraps ALTER to an "app"  
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
