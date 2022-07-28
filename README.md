@@ -17,16 +17,18 @@ Create an unofficial [ALTER](https://altermail.live/) Linux desktop application 
 <img src="ALTER_tray.png">
 </P>  
   
-## snap
+## snap  
+### x64  
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x snap_install.sh`  
-`./snap_install.sh`  
+`./snap_install-x64.sh`  
   
-## npm
+## npm  
+## x64  
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x npm_install.sh`  
-`./npm_install.sh` 
+`./npm_install-c64.sh` 
