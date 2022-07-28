@@ -35,7 +35,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x snap_install-x64.sh`  
+`chmod +x snap_install=linux-x64.sh`  
 `./snap_install-x64.sh`  
   
 ## npm  
@@ -44,5 +44,5 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x npm_install-x64.sh`  
+`chmod +x npm_install-linux-x64.sh`  
 `./npm_install-x64.sh` 
