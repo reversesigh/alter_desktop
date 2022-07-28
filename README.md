@@ -2,7 +2,7 @@
   
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
-Feel free to message me after installing to test it out: `az4jnb2ngz`
+Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`
   
 #### Add ALTER to your applications list
 <p align="center">
