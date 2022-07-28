@@ -10,6 +10,10 @@ Create an unofficial [ALTER](https://altermail.live/) Linux desktop application 
 <img src="ALTER_tray.png">
 </P>  
   
+<p align="center">
+<img src="ALTER_shell.png">
+</P>  
+  
 ## snap
 `cd ~`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
