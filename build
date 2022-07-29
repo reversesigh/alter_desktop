@@ -2,7 +2,7 @@
 
 echo "Installing nativefier via snap"
 echo
-sudo snap install nativefier
+snap install nativefier
 
 ## Creates wrapped web application using nativefier
 echo "Creating ALTER_desktop"
