@@ -1,7 +1,7 @@
 #### linux-x64  
 ##### Installs `nativefier` using `npm` and wraps ALTER to an "app"   
     
-`npm install -g nativefier`  
+`sudo npm install -g nativefier`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x build`  
