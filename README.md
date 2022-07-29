@@ -1,4 +1,3 @@
-## snap  
 #### linux-x64  
 ##### Installs `nativefier` using `snap` and wraps ALTER to an "app"   
 Do not run this script if you already have `nativefier` intalled via another package manager 
