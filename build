@@ -1,7 +1,7 @@
 echo
 echo "Installing nativefier via snap"
 echo
-snap install nativefier
+sudo snap install nativefier
 
 
 ## Creates wrapped web application using nativefier
