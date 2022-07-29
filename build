@@ -14,17 +14,13 @@ cp ALTER.desktop $HOME/.local/share/applications/
 echo -e "${BOLDGREEN}Copying alter.png to /usr/share/icons/${ENDCOLOR}"
 sudo cp alter.png /usr/share/icons/alter.png
 
-## Creates ALTER_desktop directory in /usr/bin/
-echo -e "${BOLDGREEN}Creating ALTER_desktop directory${ENDCOLOR}"
-sudo mkdir /usr/bin/ALTER_desktop
-
 ## Creates wrapped web application using nativefier
 echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
 nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
 
 ## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
 echo -e "${BOLDGREEN}Copying ALTER_desktop to /usr/bin/ALTER_desktop${ENDCOLOR}"
-sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop/
+sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop
 
 ## Removes ALTER-linux-x64 folder from current directory
 echo -e "${BOLDGREEN}Removing ALTER-linux-x64 from GitHub directory${ENDCOLOR}"
