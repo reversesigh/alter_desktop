@@ -16,7 +16,7 @@ echo "Copying alter.png to /usr/share/icons/"
 echo
 sudo cp alter.png /usr/share/icons/alter.png
 echo
-echo "Creating ALTER_desktop" directory"
+echo "Creating ALTER_desktop directory"
 echo
 mkdir ~/ALTER_desktop
 echo
