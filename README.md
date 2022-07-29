@@ -4,8 +4,7 @@
 `sudo npm install -g nativefier`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-
- `sh build` or `chmod +x build && ./build`  
+`chmod +x build && ./build`  
   
 
 # ALTER_desktop-alpha  
