@@ -1,5 +1,3 @@
-#!/bin/sh
-
 echo
 echo "Installing nativefier via snap"
 echo
