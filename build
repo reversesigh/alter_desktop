@@ -1,19 +1,10 @@
 #!/bin/sh
 
 echo
-echo "Checking for nativefier via snap"
+echo "Installing nativefier via snap"
 echo
+snap install nativefier
 
-
-## Check for nativefier, if not found then install using snap
-if ! command -v nativefier &> /dev/null
-then
-    echo "nativefier could not be found"
-    echo
-    echo "Installing nativefier via snap"
-    echo
-    snap install nativefier
-fi
 
 ## Creates wrapped web application using nativefier
 echo
