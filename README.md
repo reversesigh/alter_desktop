@@ -2,8 +2,9 @@
 #### linux-x64  
 ##### Installs `nativefier` using `snap` and wraps ALTER to an "app" 
 `git clone https://github.com/reversesigh/alter_desktop.git`  
-`cd alter_desktop`   
-`sh snap_install-linux-x64.sh`  
+`cd alter_desktop`
+`chmod +x build`
+`./build`
   
 
 # ALTER_desktop-alpha  
