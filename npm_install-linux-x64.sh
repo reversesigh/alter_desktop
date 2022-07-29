@@ -38,4 +38,4 @@ echo "You can also send me a message on ALTER @ az4jnb2ngz "
 echo
 echo "https://reversesigh.info - https://github.com/reversesigh"
 echo
-echo "ALTER_desktop is currently located at $HOME/ALTER_desktop. If you move be sure to edit ALTER.desktop accordingly"
+echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop. If you move be sure to edit ALTER.desktop accordingly"
