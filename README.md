@@ -5,8 +5,8 @@ Do not run this script if you already have `nativefier` intalled via another pac
   
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x build`  
 `sudo snap install nativeflier`  
+`chmod +x build`  
 `./build`  
   
 
