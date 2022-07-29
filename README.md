@@ -1,5 +1,12 @@
 # ALTER_desktop-alpha  
   
+## snap  
+#### linux-x64  
+##### Installs `nativefier` using `snap` and wraps ALTER to an "app" 
+`git clone https://github.com/reversesigh/alter_desktop.git`  
+`cd alter_desktop`   
+`sh snap_install-linux-x64.sh`  
+  
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
@@ -38,10 +45,3 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 <p align="center">
 <img src="ALTER_tray.png">
 </P>  
-  
-## snap  
-#### linux-x64  
-##### Installs `nativefier` using `snap` and wraps ALTER to an "app" 
-`git clone https://github.com/reversesigh/alter_desktop.git`  
-`cd alter_desktop`   
-`sh snap_install-linux-x64.sh`  
