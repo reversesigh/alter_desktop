@@ -6,10 +6,6 @@ BOLDGREEN="\e[1;${GREEN}m"
 ITALICRED="\e[3;${RED}m"
 ENDCOLOR="\e[0m"
 
-echo "Installing nativefier via snap"
-echo
-snap install nativefier
-
 ## Creates wrapped web application using nativefier
 echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
 nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
