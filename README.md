@@ -5,10 +5,7 @@
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 
- `sh build` or
-   
-`chmod +x build`  
-`./build`  
+ `sh build` or `chmod +x build && ./build`  
   
 
 # ALTER_desktop-alpha  
