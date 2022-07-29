@@ -22,7 +22,7 @@ mkdir ~/ALTER_desktop
 echo
 echo "Copying ALTER_desktop to ~/ALTER_desktop"
 echo
-cp -r ALTER-linux-x64 /usr/local/bin/
+cp -r ALTER-linux-x64 ~/ALTER_desktop
 echo
 echo "Removing ALTER-linux-x64 from GitHub directory"
 echo
