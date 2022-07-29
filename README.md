@@ -45,10 +45,3 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`   
 `sh snap_install-linux-x64.sh`  
-  
-## npm  
-#### linux-x64  
-##### Installs `nativefier` using `npm` and wraps ALTER to an "app"  
-`git clone https://github.com/reversesigh/alter_desktop.git`  
-`cd alter_desktop`  
-`sh npm_install-linux-x64.sh` 
