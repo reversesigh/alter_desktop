@@ -1,31 +1,37 @@
-#!/bin/bash
+#!/bin/sh
+
+RED="31"
+GREEN="32"
+BOLDGREEN="\e[1;${GREEN}m"
+ITALICRED="\e[3;${RED}m"
+ENDCOLOR="\e[0m"
 
 echo "Installing nativefier via snap"
 echo
 snap install nativefier
 
 ## Creates wrapped web application using nativefier
-echo "Creating ALTER_desktop"
+echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
 nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
 
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
-echo "Copying ALTER.desktop to ~/.local/share/applications/"
+echo -e "${BOLDGREEN}Copying ALTER.desktop to ~/.local/share/applications/${ENDCOLOR}"
 cp ALTER.desktop $HOME/.local/share/applications/
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
-echo "Copying alter.png to /usr/share/icons/"
+echo -e "${BOLDGREEN}Copying alter.png to /usr/share/icons/${ENDCOLOR}"
 sudo cp alter.png /usr/share/icons/alter.png
 
 ## Creates ALTER_desktop directory in /usr/bin/
-echo "Creating ALTER_desktop directory"
+echo -e "${BOLDGREEN}Creating ALTER_desktop directory${ENDCOLOR}"
 sudo mkdir /usr/bin/ALTER_desktop
 
 ## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
-echo "Copying ALTER_desktop to /usr/bin/ALTER_desktop"
+echo -e "${BOLDGREEN}Copying ALTER_desktop to /usr/bin/ALTER_desktop${ENDCOLOR}"
 sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop/
 
 ## Removes ALTER-linux-x64 folder from current directory
-echo "Removing ALTER-linux-x64 from GitHub directory"
+echo -e "${BOLDGREEN}Removing ALTER-linux-x64 from GitHub directory${ENDCOLOR}"
 rm -rf ALTER-linux-x64
 
 ## Post Message
@@ -40,5 +46,5 @@ echo "You can also send me a message on ALTER @ az4jnb2ngz "
 echo
 echo "https://reversesigh.info - https://github.com/reversesigh"
 echo
-echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop." 
+echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop."
 echo "If you move be sure to edit ALTER.desktop accordingly"
