@@ -1,11 +1,12 @@
-# ALTER_desktop-alpha  
-  
 ## snap  
 #### linux-x64  
 ##### Installs `nativefier` using `snap` and wraps ALTER to an "app" 
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`   
 `sh snap_install-linux-x64.sh`  
+  
+
+# ALTER_desktop-alpha  
   
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
