@@ -1,7 +1,7 @@
 ## snap  
 #### linux-x64  
 ##### Installs `nativefier` using `snap` and wraps ALTER to an "app"   
-Do not run this script if you already have `nativefier` intalled  
+Do not run this script if you already have `nativefier` intalled via another package manager 
   
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
