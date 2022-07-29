@@ -1,41 +1,69 @@
 #!/bin/sh
+
 echo
-echo "Installing nativefier via snap"
+echo "Checking for nativefier via snap"
 echo
-sudo snap install nativefier
+
+
+## Check for nativefier, if not found then install using snap
+if ! command -v nativefier &> /dev/null
+then
+    echo "nativefier could not be found"
+    echo
+    echo "Installing nativefier via snap"
+    echo
+    snap install nativefier
+fi
+
+## Creates wrapped web application using nativefier
 echo
 echo "Creating ALTER_desktop"
 echo
 nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
+
+## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
 echo
 echo "Copying ALTER.desktop to ~/.local/share/applications/"
-echo
 cp ALTER.desktop $HOME/.local/share/applications/
+echo
+
+## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
 echo
 echo "Copying alter.png to /usr/share/icons/"
 echo
 sudo cp alter.png /usr/share/icons/alter.png
+
+## Creates ALTER_desktop directory in /usr/bin/
 echo
 echo "Creating ALTER_desktop directory"
 echo
 sudo mkdir /usr/bin/ALTER_desktop
+
+## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
 echo
 echo "Copying ALTER_desktop to /usr/bin/ALTER_desktop"
 echo
 sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop/
+
+## Removes ALTER-linux-x64 folder from current directory
 echo
 echo "Removing ALTER-linux-x64 from GitHub directory"
 echo
 rm -rf ALTER-linux-x64
+
+## Post Message
 echo
-echo "================================================================================================"
+echo "======================================"
 echo
-echo "ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team "
+echo "ALTER_desktop is an unofficial nativefier "
+echo "application and not affiliated with the ALTER team"
 echo
-echo "Please feel free to leave any feedback to james@scrtnetwork.co or kusanagi.2029@protonmail.com"
+echo "Please feel free to leave any feedback to "
+echo "james@scrtnetwork.co or kusanagi.2029@protonmail.com"
 echo
 echo "You can also send me a message on ALTER @ az4jnb2ngz "
 echo
 echo "https://reversesigh.info - https://github.com/reversesigh"
 echo
-echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop. If you move be sure to edit ALTER.desktop accordingly"
+echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop." 
+echo "If you move be sure to edit ALTER.desktop accordingly"
