@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Installing nativefier via snap"
 echo
 sudo snap install nativefier
