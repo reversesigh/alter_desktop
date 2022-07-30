@@ -26,25 +26,25 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
     
 #### Search for ALTER:  
 <p align="center">
-<img src="ALTER_shell.png">
+<img src="resources/ALTER_shell.png">
 </P>  
   
 #### Or find ALTER in your applications list  
 <p align="center">
-<img src="ALTER_applist.png">
+<img src="resources/ALTER_applist.png">
 </P>  
   
 #### Pin ALTER to your Dash
 <p align="center">
-<img src="ALTER_dash.png">
+<img src="resources/ALTER_dash.png">
 </P>  
   
 #### Use ALTER on your desktop with ease
 <p align="center">
-<img src="ALTER_desktop.png">   
+<img src="resources/ALTER_desktop.png">   
 </p>  
   
 #### Utilize the System Tray to hide ALTER when not in use
 <p align="center">
-<img src="ALTER_tray.png">
+<img src="resources/ALTER_tray.png">
 </P>  
