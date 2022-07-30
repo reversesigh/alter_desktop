@@ -7,7 +7,7 @@ Nativefier desktop app for ALTER private messaging service
     
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
-`chmod +x build && ./build`  
+`chmod +x build && ./build`  or `sh build`
   
 # Summary
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
