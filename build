@@ -11,19 +11,26 @@ BOLDGREEN="\033[1;32m"
 BOLDRED="\033[1;31m"
 ENDCOLOR="\e[0m"
 
+#### Movement
+RM="$(which rm)"
+MV="$(which mv)"
+CP="$(which cp)"
+
 #### Variables
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
 DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-VERSION="ALTER_desktop-0.0.5-alpha for Linux-x64"
+VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
 
 #### Commands
 COMM1="sudo npm -g install nativefier"
-COMM2="cp ALTER.desktop $HOME/.local/share/applications/"
-COMM3="sudo cp alter.png /usr/share/icons/alter.png"
+COMM2="$CP ALTER.desktop $HOME/.local/share/applications/"
+COMM3="$CP alter.png $HOME/.local/share/icons/"
 COMM4="nativefier --version"
-COMM5="nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login"
-COMM7="sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop"
+COMM5="nativefier --name ALTER_desktop --platform linux --arch x64 --width 1280 --height 720 --tray --disable-dev-tools --single-instance https://app.altermail.live/login --app-version 0.0.6-alpha --overwrite true --clear-cache --block-external-urls --verbose --conceal --icon alter.png --background #000000 --lang en-US --user-agent chromium --zoom 1.05"
+COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
+COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
+COMM9="$RM -rf ALTER_desktop"
 
 #### Message Lines
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
@@ -40,33 +47,33 @@ URLS="https://reversesigh.info - https://github.com/reversesigh"
 
 #### Script Messages
 SM1="Checking for 'nativefier' on system"
-SM2="Copying ALTER.desktop to ~/.local/share/applications/"
-SM3="Copying alter.png to /usr/share/icons/"
+SM2="Creating ALTER.desktop in $HOME/.local/share/applications/"
+SM3="Copying alter.png to $HOME/.local/share/icons/"
 SM4="Creating ALTER_desktop"
-SM5="Moving ALTER-linux-x64 to ALTER_desktop"
-SM6="Copying ALTER to /usr/bin/ALTER_desktop"
+SM5="Moving ALTER_desktop-linux-x64 to ALTER_desktop"
+SM6="Copying ALTER to $HOME/.local/share/ALTER_desktop"
 SM7="Please check your settings and environment"
-SM8="Find it in your applications list or /usr/bin/ALTER_desktop/ALTER"
+SM8="Locate it in your applications list or run .$HOME/.local/share/ALTER_desktop/ALTER_desktop"
 
 #### cat
-CT1="cat variables"
+CT2="$RM $HOME/.local/share/applications/ALTER.desktop"
 
 #### Text
 TX1="Nativefier"
 TX2="NOT FOUND..."
 TX3="Installing Nativefier"
-TX4="Ntivefier already installed. Skipped."
+TX4="Nativefier already installed. Skipped."
 TX5="Checking Nanofier Version......"
 
 #### Random
-RD1="command -v ./usr/bin/ALTER_desktop/ALTER"
+RD1="command -v $HOME/.local/share/ALTER_desktop/ALTER_desktop"
 RD2="command -v"
 
 #### if then
 IT1="echo -e "${CYAN}$TX1${ENDCOLOR}" "${BOLDRED}$TX2${ENDCOLOR}""
 IT2="echo -e "${BOLDGREEN}$TX3${ENDCOLOR}""
 IT3="echo -e "${BOLDGREEN}$TX4${ENDCOLOR}""
-IT4="echo -e "${BOLDRED}WARNING${ENDOCLOR}" "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}"."
+IT4="WARNING ALTER_desktop not on system"
 IT6="echo -e "${CYAN}$SM7${ENDCOLOR}""
 IT7="echo -e "${GREY}$SM8${ENDCOLOR}""
 IT8="$RD2 ${NATIVEFIER}"
@@ -89,9 +96,10 @@ PM3="echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}""
 PM4="echo -e "${GREY}$URLS${ENDCOLOR}""
 PM5="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
 
+
+
 # ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
 
-${CT1}
 
 ## Intro
      echo
@@ -120,24 +128,34 @@ fi
      $DV2
      echo
 
-
-## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
+## Creates ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
      echo
+     $CT2
      $EP2
-     $COMM2
+     cat <<EOF >> ~/.local/share/applications/ALTER.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=$HOME/.local/share/ALTER_desktop/ALTER_desktop
+Name=ALTER
+Icon=$HOME/.local/share/icons/alter.png
+EOF
      echo
-
+cat $HOME/.local/share/applications/ALTER.desktop
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
+     $DV2
+     echo
      $EP3
      $COMM3
      echo
-
+     $DV2
 
 ## Creates wrapped web application using nativefier
      $EP4
      echo
-     $DV2
      echo
      $EP8
      echo
@@ -147,19 +165,19 @@ fi
      echo
      $DV2
 
-
 ## Move ALTER-linux-x64 to ALTER_desktop
      echo
      $EP5
      $COMM6
      echo
 
-
-## Copying ALTER to /usr/bin/ALTER_desktop
+## Copying ALTER_desktop to $HOME/.local/ALTER_desktop
      $EP6
      $COMM7
+     $COMM8
+     $COMM9
 echo
-     $DV2
+
 
 
 ## Checks to make sure installing ALTER_desktop was a success
@@ -167,7 +185,7 @@ if $IT9 2>/dev/null; then
      $IT4
      $IT6
      exit
-
+     $DV2
    else
      echo
      echo
@@ -179,6 +197,7 @@ if $IT9 2>/dev/null; then
 fi
 
      $DV2
+     echo
      $PM1
      echo
      $PM2
