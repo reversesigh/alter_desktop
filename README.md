@@ -1,4 +1,4 @@
-# ALTER_desktop-alpha  
+# ALTER_desktop  
 Nativefier desktop app for ALTER private messaging service
 
 ### INSTALL
