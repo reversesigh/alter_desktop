@@ -1,7 +1,0 @@
-#### Commands
-COMM1="sudo npm -g install nativefier"
-COMM2="cp ALTER.desktop $HOME/.local/share/applications/"
-COMM3="sudo cp alter.png /usr/share/icons/alter.png"
-COMM4="nativefier --version"
-COMM5="nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login"
-COMM7="sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop"
