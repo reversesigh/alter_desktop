@@ -24,27 +24,27 @@ VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
 
 #### Commands
 COMM1="sudo npm -g install nativefier"
-COMM2="$CP ALTER.desktop $HOME/.local/share/applications/"
+COMM2=""
 COMM3="$CP alter.png $HOME/.local/share/icons/"
 COMM4="nativefier --version"
-COMM5="nativefier --name ALTER_desktop / 
-                  --platform linux / 
-                  --arch x64 /
-                  --width 1280 /
-                  --height 720 /
-                  --tray /
-                  --disable-dev-tools /
-                  --single-instance https://app.altermail.live/login / 
-                  --app-version 0.0.6-alpha /
-                  --overwrite true /
-                  --clear-cache /
-                  --block-external-urls /
-                  --verbose /
-                  --conceal /
-                  --icon alter.png /
-                  --background #000000 /
-                  --lang en-US /
-                  --user-agent chromium /
+COMM5="nativefier --name ALTER_desktop  
+                  --platform linux 
+                  --arch x64 
+                  --width 1280 
+                  --height 720 
+                  --tray 
+                  --disable-dev-tools 
+                  --single-instance https://app.altermail.live/login 
+                  --app-version 0.0.6-alpha 
+                  --overwrite true 
+                  --clear-cache 
+                  --block-external-urls 
+                  --verbose 
+                  --conceal 
+                  --icon alter.png 
+                  --background #000000 
+                  --lang en-US 
+                  --user-agent chromium 
                   --zoom 1.05"
 COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
@@ -74,6 +74,7 @@ SM7="Please check your settings and environment"
 SM8="Locate it in your applications list or run .$HOME/.local/share/ALTER_desktop/ALTER_desktop"
 
 #### cat
+CT1=""
 CT2="$RM $HOME/.local/share/applications/ALTER.desktop"
 
 #### Text
@@ -82,6 +83,7 @@ TX2="NOT FOUND..."
 TX3="Installing Nativefier"
 TX4="Nativefier already installed. Skipped."
 TX5="Checking Nanofier Version......"
+TX6="ALTER.desktop not found, creating and placing in $HOME/.local/share/applications"
 
 #### Random
 RD1="command -v $HOME/.local/share/ALTER_desktop/ALTER_desktop"
@@ -96,6 +98,7 @@ IT6="echo -e "${CYAN}$SM7${ENDCOLOR}""
 IT7="echo -e "${GREY}$SM8${ENDCOLOR}""
 IT8="$RD2 ${NATIVEFIER}"
 IT9="hash $RD1"
+IT0="find $HOME/.local/share/applications/ALTER.desktop"
 
 #### echo Posts
 EP1="echo -e "${RED}$VERSION${ENDCOLOR}""
@@ -121,16 +124,19 @@ PM5="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
 
 ## Intro
      echo
+     echo  
+     $DV2
+     echo
      $EP1
      echo
      $DV2
 
 
-## Checks for 'nativefier' via npm. If not found then uses npm to install nativefier.
+## Checks for Nativefier via npm. If not found then uses npm to install Nativefier.
      echo
      $EP7
      echo
-
+     
 if ! $IT8 >/dev/null; then
 
      $IT1
@@ -148,9 +154,14 @@ fi
 
 ## Creates ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
      echo
+if ! $IT0 >/dev/null; then
+   echo $CT3
+   else
      $CT2
+
+fi   
      $EP2
-     cat <<EOF >> ~/.local/share/applications/ALTER.desktop
+cat <<EOF >> ~/.local/share/applications/ALTER.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
@@ -161,7 +172,7 @@ Name=ALTER
 Icon=$HOME/.local/share/icons/alter.png
 EOF
      echo
-cat $HOME/.local/share/applications/ALTER.desktop
+     cat $HOME/.local/share/applications/ALTER.desktop
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
      $DV2
