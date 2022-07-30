@@ -1,42 +1,120 @@
 #!/bin/bash
 
-RED="31"
-GREEN="32"
-BOLDGREEN="\e[1;${GREEN}m"
-ITALICRED="\e[3;${RED}m"
+
+# ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
+
+
+## Color Variables
+
+
+#### Regular Colors
+RED="\033[1;31m"
+GREEN="\033[1;32m"
+YELLOW="\033[1;33m"
+CYAN="\033[1;36m"
+GREY="\033[0;37m"
+RESET="\033[m"
+BOLDGREEN="\033[1;32m"
+BOLDRED="\033[1;31m"
 ENDCOLOR="\e[0m"
 
+
+#### Variables
+NATIVEFIER="nativefier"
+
+
+## Intro
+echo
+echo -e "${RED}ALTER_desktop-0.0.5-alpha for Linux-x64${ENDCOLOR}"
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+
+
+## Checks for 'nativefier' via npm. If not found then uses npm to install nativefier.
+echo
+echo -e "${BOLDGREEN}Checking for 'nativefier' on system${ENDCOLOR}"
+echo
+
+if ! command -v ${NATIVEFIER} >/dev/null; then
+     echo -e "${CYAN}'nativefier'${ENDCOLOR}" "${BOLDRED}NOT FOUND...${ENDCOLOR}"
+     echo
+     echo -e "${BOLDGREEN}Installing 'nativefier'${ENDCOLOR}"
+     sudo npm -g install nativefier "$@"
+   else
+     echo -e "${BOLDGREEN}'nativefier' already installed. Skipped.${ENDCOLOR}"
+
+fi
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo
+
+
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
+echo
 echo -e "${BOLDGREEN}Copying ALTER.desktop to ~/.local/share/applications/${ENDCOLOR}"
 cp ALTER.desktop $HOME/.local/share/applications/
+echo
+
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
 echo -e "${BOLDGREEN}Copying alter.png to /usr/share/icons/${ENDCOLOR}"
 sudo cp alter.png /usr/share/icons/alter.png
+echo
+
 
 ## Creates wrapped web application using nativefier
 echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo
+echo -e "nanofier version"
+echo
+echo
+nativefier --version
 nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+
 
 ## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
+echo
 echo -e "${BOLDGREEN}Copying ALTER_desktop to /usr/bin/ALTER_desktop${ENDCOLOR}"
 sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop
+echo
+
 
 ## Removes ALTER-linux-x64 folder from current directory
 echo -e "${BOLDGREEN}Removing ALTER-linux-x64 from GitHub directory${ENDCOLOR}"
 rm -rf ALTER-linux-x64
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
 
-## Post Message
-echo "======================================"
-echo "ALTER_desktop is an unofficial nativefier "
-echo "application and not affiliated with the ALTER team"
+
+## Checks to make sure installing ALTER_desktop was a success
+if hash command -v ./usr/bin/ALTER_desktop/ALTER 2>/dev/null; then
+     echo -e "${BOLDRED}'WARNING${ENDOCLOR}" : "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}".
+     echo -e "${CYAN}Please check your settings and environment${ENDCOLOR}"
+     exit
+
+   else
+     echo
+     echo
+     echo -e "${RED}ALTER_desktop${ENDCOLOR}" "${BOLDGREEN}succesfully  installed.${ENDCOLOR}"
+     echo
+     echo
+     echo -e "${GREY}Find it in your applications list or /usr/bin/ALTER_desktop/ALTER${ENDCOLOR}"
+     echo
+fi
+
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${YELLOW}ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team${ENDCOLOR}"
 echo
-echo "Please feel free to leave any feedback to "
-echo "james@scrtnetwork.co or kusanagi.2029@protonmail.com"
+echo -e "${YELLOW}Please feel free to leave any feedback to${ENDCOLOR}" "${GREY}james@scrtnetwork.co${ENDCOLOR}" or "${GREY}kusanagi.2029@protonmail.com${ENDCOLOR}"
 echo
-echo "You can also send me a message on ALTER @ az4jnb2ngz "
+echo -e "${YELLOW}You can also send me a message on ALTER${ENDCOLOR}" "${GREY}az4jnb2ngz${ENDCOLOR}"
 echo
-echo "https://reversesigh.info - https://github.com/reversesigh"
+echo -e "${GREY}https://reversesigh.info - https://github.com/reversesigh${ENDCOLOR}"
 echo
-echo "ALTER_desktop is currently located at /usr/bin/ALTER_desktop."
-echo "If you move be sure to edit ALTER.desktop accordingly"
+echo
+echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+
