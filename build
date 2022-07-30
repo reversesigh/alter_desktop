@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-# ALTER_desktop-0.0.6-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
+# ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
 
 
-## Color Variables
+#### Regular Colors
 RED="\033[1;31m"
 GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
@@ -18,79 +18,115 @@ ENDCOLOR="\e[0m"
 
 #### Variables
 NATIVEFIER="nativefier"
-#ALTER="./usr/bin/ALTER_desktop/ALTER"
+DIVIDER="=================================================="
+VERSION="ALTER_desktop-0.0.5-alpha for Linux-x64"
+
+#### Commands
+COMM1="sudo npm -g install nativefier"
+COMM2="cp ALTER.desktop $HOME/.local/share/applications/"
+COMM3="sudo cp alter.png /usr/share/icons/alter.png"
+COMM4="nativefier --version"
+COMM5="nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login"
+COMM7="sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop"
+
+
+#### Message Lines
+MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
+MSG2="Please feel free to leave any feedback to"
+MSG3="You can also send me a message on ALTER"
+
+#### Email
+EMAIL1="james@scrtnetwork.co"
+EMAIL2="kusanagi.2029@protonmail.com"
+ALTER="az4jnb2ngz"
+
+#### URLs
+URLS="https://reversesigh.info - https://github.com/reversesigh"
+
+#### Script Messages
+SM1="Checking for 'nativefier' on system"
+SM2="Copying ALTER.desktop to ~/.local/share/applications/"
+SM3="Copying alter.png to /usr/share/icons/"
+SM4="Creating ALTER_desktop"
+SM5="Moving ALTER-linux-x64 to ALTER_desktop"
+SM6="Copying ALTER to /usr/bin/ALTER_desktop"
+SM7="Please check your settings and environment"
+SM8="Find it in your applications list or /usr/bin/ALTER_desktop/ALTER"
+
 
 ## Intro
 echo
-echo -e "${RED}ALTER_desktop-0.0.5-alpha for Linux-x64${ENDCOLOR}"
+echo -e "${RED}$VERSION${ENDCOLOR}"
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 
 
 ## Checks for 'nativefier' via npm. If not found then uses npm to install nativefier.
 echo
-echo -e "${BOLDGREEN}Checking for 'nativefier' on system${ENDCOLOR}"
+echo -e "${BOLDGREEN}$SM1${ENDCOLOR}"
 echo
 
 if ! command -v ${NATIVEFIER} >/dev/null; then
+
      echo -e "${CYAN}'nativefier'${ENDCOLOR}" "${BOLDRED}NOT FOUND...${ENDCOLOR}"
      echo
      echo -e "${BOLDGREEN}Installing 'nativefier'${ENDCOLOR}"
-     sudo npm -g install nativefier "$@"
+     $COMM1 "$@"
    else
      echo -e "${BOLDGREEN}'nativefier' already installed. Skipped.${ENDCOLOR}"
 
 fi
+
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 echo
 
 
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
 echo
-echo -e "${BOLDGREEN}Copying ALTER.desktop to ~/.local/share/applications/${ENDCOLOR}"
-      cp ALTER.desktop $HOME/.local/share/applications/
+echo -e "${BOLDGREEN}$SM2${ENDCOLOR}"
+     $COMM2
 echo
 
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
-echo -e "${BOLDGREEN}Copying alter.png to /usr/share/icons/${ENDCOLOR}"
-      sudo cp alter.png /usr/share/icons/alter.png
+echo -e "${BOLDGREEN}$SM3${ENDCOLOR}"
+     $COMM3
 echo
 
 
 ## Creates wrapped web application using nativefier
-echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
+echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 echo
 echo -e "nanofier version"
 echo
 echo
-      nativefier --version
-      nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
+     $COMM4
+     $COMM5
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 
 
-## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
+## Move ALTER-linux-x64 to ALTER_desktop
 echo
-echo -e "${BOLDGREEN}Copying ALTER_desktop to /usr/bin/ALTER_desktop${ENDCOLOR}"
-      sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop
+echo -e "${BOLDGREEN}$SM5${ENDCOLOR}"
+     $COMM6
 echo
 
 
-## Removes ALTER-linux-x64 folder from current directory
-echo -e "${BOLDGREEN}Removing ALTER-linux-x64 from GitHub directory${ENDCOLOR}"
-      rm -rf ALTER-linux-x64
+## Copying ALTER to /usr/bin/ALTER_desktop
+echo -e "${BOLDGREEN}$SM6${ENDCOLOR}"
+     $COMM7
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 
 
 ## Checks to make sure installing ALTER_desktop was a success
 if hash command -v ./usr/bin/ALTER_desktop/ALTER 2>/dev/null; then
      echo -e "${BOLDRED}'WARNING${ENDOCLOR}" : "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}".
-     echo -e "${CYAN}Please check your settings and environment${ENDCOLOR}"
+     echo -e "${CYAN}$SM7${ENDCOLOR}"
      exit
 
    else
@@ -99,19 +135,18 @@ if hash command -v ./usr/bin/ALTER_desktop/ALTER 2>/dev/null; then
      echo -e "${RED}ALTER_desktop${ENDCOLOR}" "${BOLDGREEN}succesfully  installed.${ENDCOLOR}"
      echo
      echo
-     echo -e "${GREY}Find it in your applications list or /usr/bin/ALTER_desktop/ALTER${ENDCOLOR}"
+     echo -e "${GREY}$SM8${ENDCOLOR}"
      echo
 fi
 
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
-echo -e "${YELLOW}ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team${ENDCOLOR}"
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+echo -e "${YELLOW}$MSG1${ENDCOLOR}"
 echo
-echo -e "${YELLOW}Please feel free to leave any feedback to${ENDCOLOR}" "${GREY}james@scrtnetwork.co${ENDCOLOR}" or "${GREY}kusanagi.2029@protonmail.com${ENDCOLOR}"
+echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}"
 echo
-echo -e "${YELLOW}You can also send me a message on ALTER${ENDCOLOR}" "${GREY}az4jnb2ngz${ENDCOLOR}"
+echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}"
 echo
-echo -e "${GREY}https://reversesigh.info - https://github.com/reversesigh${ENDCOLOR}"
+echo -e "${GREY}$URLS${ENDCOLOR}"
 echo
 echo
-echo -e "${BOLDRED}===================================================${ENDCOLOR}"
-
+echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
