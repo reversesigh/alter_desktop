@@ -1,7 +1,6 @@
 #### linux-x64  
-##### Install `nativefier` using `npm` and wrap ALTER to an "app"   
+##### Install `nativefier` using `npm` and wrap ALTER to an "app". You *MUST* have `npm` on Linux to run this script.   
     
-`sudo npm install -g nativefier`  
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x build && ./build`  
