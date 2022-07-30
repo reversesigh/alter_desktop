@@ -3,7 +3,7 @@ Nativefier desktop app for ALTER private messaging service
 
 ### INSTALL
 #### linux-x64  
-##### Install `nativefier` using `npm` and wrap ALTER to an "app". You *MUST* have `npm` on Linux to run this script. If you do not have it then check with your distribution's best practices for installing first.   
+##### Install `nativefier` using `npm` and wrap ALTER to an "app". You *MUST* have `npm` on Linux to run this script. If you do not have it then check with your distribution's [best practices](https://linuxconfig.org/install-npm-on-linux) for installing first.   
     
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
