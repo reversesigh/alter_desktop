@@ -97,7 +97,7 @@ echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
 echo
 echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 echo
-echo -e "nanofier version"
+echo -e "nativefier version"
 echo
 echo
      $COMM4
