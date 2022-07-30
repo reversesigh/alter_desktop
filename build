@@ -27,7 +27,25 @@ COMM1="sudo npm -g install nativefier"
 COMM2="$CP ALTER.desktop $HOME/.local/share/applications/"
 COMM3="$CP alter.png $HOME/.local/share/icons/"
 COMM4="nativefier --version"
-COMM5="nativefier --name ALTER_desktop --platform linux --arch x64 --width 1280 --height 720 --tray --disable-dev-tools --single-instance https://app.altermail.live/login --app-version 0.0.6-alpha --overwrite true --clear-cache --block-external-urls --verbose --conceal --icon alter.png --background #000000 --lang en-US --user-agent chromium --zoom 1.05"
+COMM5="nativefier --name ALTER_desktop / 
+                  --platform linux / 
+                  --arch x64 /
+                  --width 1280 /
+                  --height 720 /
+                  --tray /
+                  --disable-dev-tools /
+                  --single-instance https://app.altermail.live/login / 
+                  --app-version 0.0.6-alpha /
+                  --overwrite true /
+                  --clear-cache /
+                  --block-external-urls /
+                  --verbose /
+                  --conceal /
+                  --icon alter.png /
+                  --background #000000 /
+                  --lang en-US /
+                  --user-agent chromium /
+                  --zoom 1.05"
 COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
 COMM9="$RM -rf ALTER_desktop"
