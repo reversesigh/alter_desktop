@@ -1,5 +1,5 @@
 # ALTER_desktop  
-Nativefier desktop app for ALTER private messaging service
+Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service
 
 ### INSTALL
 #### linux-x64  
