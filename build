@@ -52,13 +52,13 @@ echo
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
 echo
 echo -e "${BOLDGREEN}Copying ALTER.desktop to ~/.local/share/applications/${ENDCOLOR}"
-cp ALTER.desktop $HOME/.local/share/applications/
+      cp ALTER.desktop $HOME/.local/share/applications/
 echo
 
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
 echo -e "${BOLDGREEN}Copying alter.png to /usr/share/icons/${ENDCOLOR}"
-sudo cp alter.png /usr/share/icons/alter.png
+      sudo cp alter.png /usr/share/icons/alter.png
 echo
 
 
@@ -70,8 +70,8 @@ echo
 echo -e "nanofier version"
 echo
 echo
-nativefier --version
-nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
+      nativefier --version
+      nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login
 echo
 echo -e "${BOLDRED}===================================================${ENDCOLOR}"
 
@@ -79,13 +79,13 @@ echo -e "${BOLDRED}===================================================${ENDCOLOR
 ## Copies contents of ALTER-linux-x64 to /usr/bin/ALTER_desktop
 echo
 echo -e "${BOLDGREEN}Copying ALTER_desktop to /usr/bin/ALTER_desktop${ENDCOLOR}"
-sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop
+      sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop
 echo
 
 
 ## Removes ALTER-linux-x64 folder from current directory
 echo -e "${BOLDGREEN}Removing ALTER-linux-x64 from GitHub directory${ENDCOLOR}"
-rm -rf ALTER-linux-x64
+      rm -rf ALTER-linux-x64
 echo
 echo -e "${BOLDRED}===================================================${ENDCOLOR}"
 
