@@ -1,5 +1,5 @@
 # ALTER_desktop-alpha  
-Nativefier desktop app for ALTER private messaging service running in shared Electron runtime 
+Nativefier desktop app for ALTER private messaging service
 
 #### linux-x64  
 ##### Install `nativefier` using `npm` and wrap ALTER to an "app". You *MUST* have `npm` on Linux to run this script. If you do not have it then check with your distribution's best practices for installing first.   
