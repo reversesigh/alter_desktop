@@ -96,7 +96,7 @@ IT8="$RD2 ${NATIVEFIER}"
 IT9="hash $RD1"
 IT0="find $HOME/.local/share/applications/ALTER.desktop"
 
-#### echo Posts
+#### echo 
 EP1="echo -e "${RED}$VERSION${ENDCOLOR}""
 EP2="echo -e "${BOLDGREEN}$SM2${ENDCOLOR}""
 EP3="echo -e "${BOLDGREEN}$SM3${ENDCOLOR}""
@@ -106,7 +106,7 @@ EP6="echo -e "${BOLDGREEN}$SM6${ENDCOLOR}""
 EP7="echo -e "${BOLDGREEN}$SM1${ENDCOLOR}""
 EP8="echo -e $TX5"
 
-#### PM Codes
+#### PM 
 PM1="echo -e "${YELLOW}$MSG1${ENDCOLOR}""
 PM2="echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}""
 PM3="echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}""
