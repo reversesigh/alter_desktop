@@ -14,6 +14,7 @@ ENDCOLOR="\e[0m"
 #### Variables
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
+DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
 VERSION="ALTER_desktop-0.0.5-alpha for Linux-x64"
 
 #### Commands
@@ -50,15 +51,49 @@ SM8="Find it in your applications list or /usr/bin/ALTER_desktop/ALTER"
 #### cat
 CT1="cat variables"
 
+#### Text
+TX1="Nativefier"
+TX2="NOT FOUND..."
+TX3="Installing Nativefier"
+TX4="Ntivefier already installed. Skipped."
+TX5="Checking Nanofier Version......"
+
+#### Random
+RD1="command -v ./usr/bin/ALTER_desktop/ALTER"
+RD2="command -v"
+
+#### if then
+IT1="echo -e "${CYAN}$TX1${ENDCOLOR}" "${BOLDRED}$TX2${ENDCOLOR}""
+IT2="echo -e "${BOLDGREEN}$TX3${ENDCOLOR}""
+IT3="echo -e "${BOLDGREEN}$TX4${ENDCOLOR}""
+IT4="echo -e "${BOLDRED}WARNING${ENDOCLOR}" "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}"."
+IT6="echo -e "${CYAN}$SM7${ENDCOLOR}""
+IT7="echo -e "${GREY}$SM8${ENDCOLOR}""
+
+#### echo Posts
+EP1="echo -e "${RED}$VERSION${ENDCOLOR}""
+EP2="echo -e "${BOLDGREEN}$SM2${ENDCOLOR}""
+EP3="echo -e "${BOLDGREEN}$SM3${ENDCOLOR}""
+EP4="echo -e "${BOLDGREEN}$SM4${ENDCOLOR}""
+EP5="echo -e "${BOLDGREEN}$SM5${ENDCOLOR}""
+EP6="echo -e "${BOLDGREEN}$SM6${ENDCOLOR}""
+
+#### PM Codes
+PM1="echo -e "${YELLOW}$MSG1${ENDCOLOR}""
+PM2="echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}""
+PM3="echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}""
+PM4="echo -e "${GREY}$URLS${ENDCOLOR}""
+PM5="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
+
 # ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
 
 ${CT1}
 
 ## Intro
 echo
-echo -e "${RED}$VERSION${ENDCOLOR}"
+     $EP1
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $DV2
 
 
 ## Checks for 'nativefier' via npm. If not found then uses npm to install nativefier.
@@ -66,87 +101,88 @@ echo
 echo -e "${BOLDGREEN}$SM1${ENDCOLOR}"
 echo
 
-if ! command -v ${NATIVEFIER} >/dev/null; then
+if ! $RD2 ${NATIVEFIER} >/dev/null; then
 
-     echo -e "${CYAN}'nativefier'${ENDCOLOR}" "${BOLDRED}NOT FOUND...${ENDCOLOR}"
+     $IT1
      echo
-     echo -e "${BOLDGREEN}Installing 'nativefier'${ENDCOLOR}"
+     $IT2
      $COMM1 "$@"
    else
-     echo -e "${BOLDGREEN}'nativefier' already installed. Skipped.${ENDCOLOR}"
+     $IT3
 
 fi
 
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $DV2
 echo
 
 
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
 echo
-echo -e "${BOLDGREEN}$SM2${ENDCOLOR}"
+     $EP2
      $COMM2
 echo
 
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
-echo -e "${BOLDGREEN}$SM3${ENDCOLOR}"
+     $EP3
      $COMM3
 echo
 
 
 ## Creates wrapped web application using nativefier
-echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
+     $EP4
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $DV2
 echo
-echo -e "nanofier version"
+echo -e $TX5
 echo
 echo
      $COMM4
      $COMM5
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $DV2
 
 
 ## Move ALTER-linux-x64 to ALTER_desktop
 echo
-echo -e "${BOLDGREEN}$SM5${ENDCOLOR}"
+     $EP5
      $COMM6
 echo
 
 
 ## Copying ALTER to /usr/bin/ALTER_desktop
-echo -e "${BOLDGREEN}$SM6${ENDCOLOR}"
+     $EP6
      $COMM7
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $DV2
 
 
 ## Checks to make sure installing ALTER_desktop was a success
-if hash command -v ./usr/bin/ALTER_desktop/ALTER 2>/dev/null; then
-     echo -e "${BOLDRED}'WARNING${ENDOCLOR}" : "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}".
-     echo -e "${CYAN}$SM7${ENDCOLOR}"
+if hash $RD1 2>/dev/null; then
+     $IT4
+     $IT6
      exit
 
    else
      echo
      echo
-     echo -e "${RED}ALTER_desktop${ENDCOLOR}" "${BOLDGREEN}succesfully  installed.${ENDCOLOR}"
+     $IT5
      echo
      echo
-     echo -e "${GREY}$SM8${ENDCOLOR}"
+     $IT7
      echo
 fi
 
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
-echo -e "${YELLOW}$MSG1${ENDCOLOR}"
+     $DV2
+     $PM1
 echo
-echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}"
+     $PM2
 echo
-echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}"
+     $PM3
 echo
-echo -e "${GREY}$URLS${ENDCOLOR}"
+     $PM4
 echo
 echo
-echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     $PM5
+
