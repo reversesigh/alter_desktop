@@ -1,8 +1,10 @@
+## Example in case script doesnt work for you. Edit as needed.
+
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/home/rbatty/.local/share/ALTER_desktop/ALTER_desktop
+Exec=path/to/ALTER_desktop
 Name=ALTER
-Icon=/home/rbatty/.local/share/icons/alter.png
+Icon=path/to/icons/alter.png
