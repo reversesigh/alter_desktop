@@ -15,7 +15,6 @@ BOLDGREEN="\033[1;32m"
 BOLDRED="\033[1;31m"
 ENDCOLOR="\e[0m"
 
-
 #### Variables
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
@@ -28,7 +27,6 @@ COMM3="sudo cp alter.png /usr/share/icons/alter.png"
 COMM4="nativefier --version"
 COMM5="nativefier --name ALTER --platform linux --arch x64 --width 1634 --height 1355 --tray --disable-dev-tools --single-instance https://app.altermail.live/login"
 COMM7="sudo cp -r ALTER-linux-x64 /usr/bin/ALTER_desktop"
-
 
 #### Message Lines
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
@@ -52,7 +50,6 @@ SM5="Moving ALTER-linux-x64 to ALTER_desktop"
 SM6="Copying ALTER to /usr/bin/ALTER_desktop"
 SM7="Please check your settings and environment"
 SM8="Find it in your applications list or /usr/bin/ALTER_desktop/ALTER"
-
 
 ## Intro
 echo
