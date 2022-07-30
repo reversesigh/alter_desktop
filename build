@@ -77,6 +77,8 @@ EP3="echo -e "${BOLDGREEN}$SM3${ENDCOLOR}""
 EP4="echo -e "${BOLDGREEN}$SM4${ENDCOLOR}""
 EP5="echo -e "${BOLDGREEN}$SM5${ENDCOLOR}""
 EP6="echo -e "${BOLDGREEN}$SM6${ENDCOLOR}""
+EP7="echo -e "${BOLDGREEN}$SM1${ENDCOLOR}""
+EP8="echo -e $TX5"
 
 #### PM Codes
 PM1="echo -e "${YELLOW}$MSG1${ENDCOLOR}""
@@ -90,16 +92,16 @@ PM5="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
 ${CT1}
 
 ## Intro
-echo
+     echo
      $EP1
-echo
+     echo
      $DV2
 
 
 ## Checks for 'nativefier' via npm. If not found then uses npm to install nativefier.
-echo
-echo -e "${BOLDGREEN}$SM1${ENDCOLOR}"
-echo
+     echo
+     $EP7
+     echo
 
 if ! $RD2 ${NATIVEFIER} >/dev/null; then
 
@@ -112,43 +114,43 @@ if ! $RD2 ${NATIVEFIER} >/dev/null; then
 
 fi
 
-echo
+     echo
      $DV2
-echo
+     echo
 
 
 ## Copies ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
-echo
+     echo
      $EP2
      $COMM2
-echo
+     echo
 
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
      $EP3
      $COMM3
-echo
+     echo
 
 
 ## Creates wrapped web application using nativefier
      $EP4
-echo
+     echo
      $DV2
-echo
-echo -e $TX5
-echo
-echo
+     echo
+     $EP8
+     echo
+     echo
      $COMM4
      $COMM5
-echo
+     echo
      $DV2
 
 
 ## Move ALTER-linux-x64 to ALTER_desktop
-echo
+     echo
      $EP5
      $COMM6
-echo
+     echo
 
 
 ## Copying ALTER to /usr/bin/ALTER_desktop
@@ -176,13 +178,12 @@ fi
 
      $DV2
      $PM1
-echo
+     echo
      $PM2
-echo
+     echo
      $PM3
-echo
+     echo
      $PM4
-echo
-echo
+     echo
+     echo
      $PM5
-
