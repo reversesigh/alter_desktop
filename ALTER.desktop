@@ -3,6 +3,6 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/usr/bin/ALTER_desktop/ALTER-linux-x64/ALTER
+Exec=/usr/bin/ALTER_desktop/ALTER
 Name=ALTER
 Icon=alter
