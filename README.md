@@ -1,3 +1,6 @@
+# ALTER_desktop-alpha  
+Nativefier desktop app for ALTER private messaging service running in shared Electron runtime 
+
 #### linux-x64  
 ##### Install `nativefier` using `npm` and wrap ALTER to an "app". You *MUST* have `npm` on Linux to run this script. If you do not have it then check with your distribution's best practices for installing first.   
     
@@ -5,8 +8,6 @@
 `cd alter_desktop`  
 `chmod +x build && ./build`  
   
-
-# ALTER_desktop-alpha  
   
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
