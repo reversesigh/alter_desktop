@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-# ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
-
-
 #### Regular Colors
 RED="\033[1;31m"
 GREEN="\033[1;32m"
@@ -51,6 +47,13 @@ SM6="Copying ALTER to /usr/bin/ALTER_desktop"
 SM7="Please check your settings and environment"
 SM8="Find it in your applications list or /usr/bin/ALTER_desktop/ALTER"
 
+#### cat
+CT1="cat variables"
+
+# ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
+
+${CT1}
+
 ## Intro
 echo
 echo -e "${RED}$VERSION${ENDCOLOR}"
@@ -97,7 +100,7 @@ echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
 echo
 echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
 echo
-echo -e "nativefier version"
+echo -e "nanofier version"
 echo
 echo
      $COMM4
