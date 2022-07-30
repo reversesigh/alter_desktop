@@ -16,7 +16,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
 
 **A note on Desktop Environments and Distributions** - Scripts were tested on a customized GNOME 42 on Arch (System Tray works) and the default GNOME settings for Fedora 36 and Ubuntu 24.04 (does not show a visible System Tray without changing GNOME settings). You may have better luck if you are using older vesions of these distributions (i.e. Fedora 35, Ubuntu 20.04). Scripts have not been tested on other environments yet (XFCE, KDE, etc.,) but *should* work    
   
-**A note on Keplr** - Currently researching possibilities of Keplr integration. At this point Keplr integration is not available.  
+**A note on Keplr/Ledger** - Currently researching possibilities of Keplr or Ledger integration. At this point Keplr and Ledger integration is not available. Keplr integration is tricky due to limitations of Electron,  
   
 **A note on Windows/macOS** - `ALTER_desktop` is currently only available for `linux-x64` systems. Versions for Windows and macOS are planned.  
   
