@@ -71,7 +71,7 @@ SM4="Creating ALTER_desktop"
 SM5="Moving ALTER_desktop-linux-x64 to ALTER_desktop"
 SM6="Copying ALTER to $HOME/.local/share/ALTER_desktop"
 SM7="Please check your settings and environment"
-SM8="Locate ALTER_desktop in your applications list or run .$HOME/.local/share/ALTER_desktop/ALTER_desktop"
+SM8="Locate ALTER_desktop in your applications list or run $HOME/.local/share/ALTER_desktop/ALTER_desktop"
 
 #### cat
 CT1=""
