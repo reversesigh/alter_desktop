@@ -69,6 +69,8 @@ IT3="echo -e "${BOLDGREEN}$TX4${ENDCOLOR}""
 IT4="echo -e "${BOLDRED}WARNING${ENDOCLOR}" "${CYAN}Could not find${ENDCOLOR}" "${RED}ALTER_desktop${ENDCOLOR}"."
 IT6="echo -e "${CYAN}$SM7${ENDCOLOR}""
 IT7="echo -e "${GREY}$SM8${ENDCOLOR}""
+IT8="$RD2 ${NATIVEFIER}"
+IT9="hash $RD1"
 
 #### echo Posts
 EP1="echo -e "${RED}$VERSION${ENDCOLOR}""
@@ -103,7 +105,7 @@ ${CT1}
      $EP7
      echo
 
-if ! $RD2 ${NATIVEFIER} >/dev/null; then
+if ! $IT8 >/dev/null; then
 
      $IT1
      echo
@@ -161,7 +163,7 @@ echo
 
 
 ## Checks to make sure installing ALTER_desktop was a success
-if hash $RD1 2>/dev/null; then
+if $IT9 2>/dev/null; then
      $IT4
      $IT6
      exit
