@@ -1,15 +1,8 @@
 # ALTER_desktop  
 Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service
-  
 ____________________  
   
-### INSTALL
-#### linux-x64  
-##### Install `nativefier` using `npm` and wrap ALTER to an "app".  
-  
-____________________  
-  
-#### Install nodejs / npm  
+#### 1. Install nodejs / npm  
 ###### Skip if you have `npm` already installed  
 ##### ubuntu  
 `sudo apt install npm`  
@@ -22,7 +15,7 @@ sudo dnf install npm
   
 ____________________  
   
- #### Install ALTER_desktop
+ #### 2. Install ALTER_desktop
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x build && ./build`  
