@@ -6,7 +6,7 @@ Nativefier desktop app for [ALTER](https://altermail.live/) private messaging se
 ##### Install `nativefier` using `npm` and wrap ALTER to an "app".  
   
 #### Install nodejs / npm  
-####### Skip if you have `npm` already installed  
+###### Skip if you have `npm` already installed  
 ##### ubuntu  
 `sudo apt install npm`  
 ##### CentOS / RHEL / Fedora  
