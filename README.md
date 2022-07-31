@@ -11,7 +11,7 @@ ____________________
 ##### Arch / Manjaro
 `sudo pacman -S npm`  
 ##### OpenSUSE  
-`sudo zypper install npm # also installs nodejs`  
+`sudo zypper install npm`  
   
 ____________________  
   
