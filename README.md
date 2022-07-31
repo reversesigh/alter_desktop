@@ -31,8 +31,6 @@ ____________________
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
-  
-**A note on Keplr/Ledger** - Keplr support is unlikely in the near future due to limitations of Electronc. However if ALTER ever supports Ledger Web directly it may be possible. Currently investigating by wrapping a similar app using Comostation Web Wallet.    
     
 ____________________  
     
