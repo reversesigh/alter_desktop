@@ -32,11 +32,7 @@ Create an unofficial [ALTER](https://altermail.live/) desktop application by wra
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
   
-**A note on the latest version of GNOME** - GNOME users may need to modify their desktop settings to get the System Tray to work, depending on your GNOME version and current settings.  
-
-**A note on Desktop Environments and Distributions** - Scripts were tested on a customized GNOME 42 on Arch (System Tray works) and the default GNOME settings for Fedora 36 and Ubuntu 24.04 (does not show a visible System Tray without changing GNOME settings). You may have better luck if you are using older vesions of these distributions (i.e. Fedora 35, Ubuntu 20.04). Scripts have not been tested on other environments yet (XFCE, KDE, etc.,) but *should* work    
-  
-**A note on Keplr/Ledger** - Currently researching possibilities of Keplr or Ledger integration. At this point Keplr and Ledger integration is not available. Keplr integration is unlikely due to limitations of Electron,  
+**A note on Keplr/Ledger** - Keplr support is unlikely in the near future due to limitations of Electronc. However if ALTER ever supports Ledger Web directly it may be possible. Currently investigating by wrapping a similar app using Comostation Web Wallet.    
     
 ____________________  
     
