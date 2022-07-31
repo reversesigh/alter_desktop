@@ -22,7 +22,12 @@ ____________________
   
 ____________________  
   
-# Summary
+#### 3. For GNOME users. Install Tray Icons: Reloaded shell extension  
+[GNOME Extensions - Tray Icons: Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/)  
+  
+____________________
+  
+# Summary  
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
