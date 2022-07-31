@@ -2,7 +2,7 @@
 Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service. Currently only supported for linux-x64
 ____________________  
   
-#### 1. Install nodejs / npm  
+#### 1. Install npm  
 ###### Skip if you have `npm` already installed  
 ##### ubuntu  
 `sudo apt install npm`  
