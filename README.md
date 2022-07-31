@@ -1,9 +1,13 @@
 # ALTER_desktop  
 Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service
-
+  
+____________________  
+  
 ### INSTALL
 #### linux-x64  
 ##### Install `nativefier` using `npm` and wrap ALTER to an "app".  
+  
+____________________  
   
 #### Install nodejs / npm  
 ###### Skip if you have `npm` already installed  
@@ -15,11 +19,15 @@ Nativefier desktop app for [ALTER](https://altermail.live/) private messaging se
 sudo dnf install npm  
 ##### OpenSUSE  
 `sudo zypper install npm # also installs nodejs`  
-    
+  
+____________________  
+  
  #### Install ALTER_desktop
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
 `chmod +x build && ./build`  
+  
+____________________  
   
 # Summary
 Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
@@ -32,7 +40,7 @@ Feel free to message me after installing and logging in to test it out: `az4jnb2
   
 **A note on Keplr/Ledger** - Currently researching possibilities of Keplr or Ledger integration. At this point Keplr and Ledger integration is not available. Keplr integration is unlikely due to limitations of Electron,  
     
-    
+____________________  
     
 #### Search for ALTER:  
 <p align="center">
