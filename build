@@ -81,7 +81,7 @@ TX6="ALTER.desktop not found, creating and placing in $HOME/.local/share/applica
 #### cat
 CT2="$RM $HOME/.local/share/applications/ALTER.desktop"
 
-#### Random
+#### Check For
 RD1="command -v $HOME/.local/share/ALTER_desktop/ALTER_desktop"
 RD2="command -v"
 
