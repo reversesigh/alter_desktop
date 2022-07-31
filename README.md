@@ -4,7 +4,7 @@ ____________________
   
 #### 1. Install npm  
 ###### Skip if you have `npm` already installed  
-##### ubuntu  
+##### Debian / Ubuntu  
 `sudo apt install npm`  
 ##### CentOS / RHEL / Fedora  
 `sudo dnf install npm`
