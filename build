@@ -1,126 +1,20 @@
 #!/bin/bash
 
-#### Regular Colors
-RED="\033[1;31m"
-GREEN="\033[1;32m"
-YELLOW="\033[1;33m"
-CYAN="\033[1;36m"
-GREY="\033[0;37m"
-RESET="\033[m"
-BOLDGREEN="\033[1;32m"
-BOLDRED="\033[1;31m"
-ENDCOLOR="\e[0m"
-
-#### Movement
-RM="$(which rm)"
-MV="$(which mv)"
-CP="$(which cp)"
-
-#### Variables
-NATIVEFIER="nativefier"
-DIVIDER="=================================================="
-DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
-
-#### Commands
-COMM1="sudo npm -g install nativefier"
-COMM3="$CP resources/alter.png $HOME/.local/share/icons/"
-COMM4="nativefier --version"
-COMM5="nativefier --name ALTER_desktop  
-                  --platform linux 
-                  --arch x64 
-                  --width 1280 
-                  --height 720 
-                  --tray 
-                  --disable-dev-tools 
-                  --single-instance https://app.altermail.live/login 
-                  --app-version 0.0.6-alpha 
-                  --overwrite true 
-                  --clear-cache 
-                  --block-external-urls 
-                  --verbose 
-                  --conceal 
-                  --icon resources/alter.png 
-                  --background #000000 
-                  --lang en-US 
-                  --user-agent chromium 
-                  --zoom 1.05"
-COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
-COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
-COMM9="$RM -rf ALTER_desktop"
-
-#### End Message
-MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
-MSG2="Please feel free to leave any feedback to"
-MSG3="You can also send me a message on ALTER"
-
-#### Email
-EMAIL1="james@scrtnetwork.co"
-EMAIL2="kusanagi.2029@protonmail.com"
-ALTER="az4jnb2ngz"
-
-#### URLs
-URLS="https://reversesigh.info - https://github.com/reversesigh"
-
-#### Messages
-SM1="Checking for 'nativefier' on system"
-SM2="Creating ALTER.desktop in $HOME/.local/share/applications/"
-SM3="Copying resources/alter.png to $HOME/.local/share/icons/"
-SM4="Creating ALTER_desktop"
-SM5="Moving ALTER_desktop-linux-x64 to ALTER_desktop"
-SM6="Copying ALTER to $HOME/.local/share/ALTER_desktop"
-SM7="Please check your settings and environment"
-SM8="Locate ALTER_desktop in your applications list or run $HOME/.local/share/ALTER_desktop/ALTER_desktop"
-TX1="Nativefier"
-TX2="NOT FOUND..."
-TX3="Installing Nativefier"
-TX4="Nativefier already installed. Skipped."
-TX5="Checking Nanofier Version......"
-TX6="ALTER.desktop not found, creating and placing in $HOME/.local/share/applications"
-
-#### cat
-CT2="$RM $HOME/.local/share/applications/ALTER.desktop"
-
-#### Check For
-RD1="command -v $HOME/.local/share/ALTER_desktop/ALTER_desktop"
-RD2="command -v"
-
-#### if then
-IT1="echo -e "${CYAN}$TX1${ENDCOLOR}" "${BOLDRED}$TX2${ENDCOLOR}""
-IT2="echo -e "${BOLDGREEN}$TX3${ENDCOLOR}""
-IT3="echo -e "${BOLDGREEN}$TX4${ENDCOLOR}""
-IT4="WARNING ALTER_desktop not on system"
-IT6="echo -e "${CYAN}$SM7${ENDCOLOR}""
-IT7="echo -e "${GREY}$SM8${ENDCOLOR}""
-IT8="$RD2 ${NATIVEFIER}"
-IT9="hash $RD1"
-IT0="find $HOME/.local/share/applications/ALTER.desktop"
-
-#### echo 
-EP1="echo -e "${RED}$VERSION${ENDCOLOR}""
-EP2="echo -e "${BOLDGREEN}$SM2${ENDCOLOR}""
-EP3="echo -e "${BOLDGREEN}$SM3${ENDCOLOR}""
-EP4="echo -e "${BOLDGREEN}$SM4${ENDCOLOR}""
-EP5="echo -e "${BOLDGREEN}$SM5${ENDCOLOR}""
-EP6="echo -e "${BOLDGREEN}$SM6${ENDCOLOR}""
-EP7="echo -e "${BOLDGREEN}$SM1${ENDCOLOR}""
-EP8="echo -e $TX5"
-
-#### PM 
-PM1="echo -e "${YELLOW}$MSG1${ENDCOLOR}""
-PM2="echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}""
-PM3="echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}""
-PM4="echo -e "${GREY}$URLS${ENDCOLOR}""
-PM5="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-
-
-
 # ALTER_desktop-0.0.5-alpha - An Unofficial Desktop App for Linux-x64 wrapped with 'nativefier'
 
+## resources/scrollbar.css injection script from https://gist.github.com/febritecno/82ec55602ccd2cbb08ef69fa4c863d46/
 
+## Loading Vairables    
+     echo
+     source resources/variables
+     $COMM0
+     
 ## Intro
      echo
      echo  
+     $EP9
+     echo
+     echo
      $DV2
      echo
      $EP1
