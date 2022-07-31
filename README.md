@@ -1,5 +1,5 @@
 # ALTER_desktop  
-Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service
+Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service. Currently only supported for linux-x64
 ____________________  
   
 #### 1. Install nodejs / npm  
