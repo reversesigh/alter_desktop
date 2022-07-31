@@ -1,0 +1,12 @@
+body{
+overflow-x: hidden;
+overflow-y: scroll;
+ }
+ 
+html{
+	position: relative;
+}
+ 
+ body::-webkit-scrollbar{
+	 display: none;
+ }
