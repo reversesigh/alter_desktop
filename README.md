@@ -9,7 +9,7 @@ ____________________
 ##### CentOS / RHEL / Fedora  
 `sudo dnf install npm`
 ##### Arch / Manjaro
-sudo pacman -S npm  
+`sudo pacman -S npm`  
 ##### OpenSUSE  
 `sudo zypper install npm # also installs nodejs`  
   
