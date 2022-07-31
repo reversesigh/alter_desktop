@@ -20,7 +20,7 @@ CP="$(which cp)"
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
 DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
+VERSION="ALTER_desktop-0.0.7-alpha for Linux-x64"
 
 #### Commands
 COMM1="sudo npm -g install nativefier"
@@ -34,7 +34,7 @@ COMM5="nativefier --name ALTER_desktop
                   --tray
                   --disable-dev-tools
                   --single-instance https://app.altermail.live/login
-                  --app-version 0.0.6-alpha
+                  --app-version 0.0.7-alpha
                   --overwrite true
                   --clear-cache
                   --block-external-urls
