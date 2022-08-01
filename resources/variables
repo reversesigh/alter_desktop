@@ -20,36 +20,18 @@ CP="$(which cp)"
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
 DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-VERSION="ALTER_desktop-0.0.7-alpha for Linux-x64"
+VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
 
 #### Commands
+NAT2="node nativefier.js"
 COMM1="sudo npm -g install nativefier"
 COMM3="$CP resources/alter.png $HOME/.local/share/icons/"
 COMM4="nativefier --version"
-COMM5="nativefier --name ALTER_desktop
-                  --platform linux
-                  --arch x64
-                  --width 1280
-                  --height 720
-                  --tray
-                  --disable-dev-tools
-                  --single-instance https://app.altermail.live/login
-                  --app-version 0.0.7-alpha
-                  --overwrite true
-                  --clear-cache
-                  --block-external-urls
-                  --verbose
-                  --conceal
-                  --inject resources/scrollbar.css
-                  --icon resources/alter.png
-                  --background #000000
-                  --lang en-US
-                  --user-agent chromium
-                  --zoom 1.004"
 COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
 COMM9="$RM -rf ALTER_desktop"
 COMM0="cat resources/variables"
+COMMA="sudo npm -g update nativefier"
 
 #### End Message
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
@@ -76,7 +58,7 @@ SM8="Locate ALTER_desktop in your applications list or run $HOME/.local/share/AL
 TX1="Nativefier"
 TX2="NOT FOUND..."
 TX3="Installing Nativefier"
-TX4="Nativefier already installed. Skipped."
+TX4="Nativefier already installed. Checking for updates..."
 TX5="Checking Nanofier Version......"
 TX6="ALTER.desktop not found, creating and placing in $HOME/.local/share/applications"
 TX0="Injecting variables"
