@@ -22,7 +22,7 @@ var options = {
   insecure: false,
   honest: false,
   zoom: 1.004,
-  userAnget: 'honest':
+  userAnget: 'chromium',
   singleInstance: true,
   clearCache: true,
   tray: true,
