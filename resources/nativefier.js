@@ -13,6 +13,7 @@ var options = {
   width: 1280,
   height: 720,
   verbose: true,
+  quiet:false,
   showMenuBar: false,
   ignoreCertificate: false,
   ignoreGpuBlacklist: false,
