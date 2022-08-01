@@ -8,6 +8,24 @@
      echo
      source resources/variables
      $COMM0
+     echo
+     echo
+     
+     echo "Detecting Operating System..."
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+     echo "Not supported on macOS"
+     exit
+fi
+
+if [[ "$OSTYPE" =~ ^linux-gnu ]]; then
+     echo "Linux detected - continuing install"
+fi
+
+if [[ "$OSTYPE" =~ ^windows ]]; then
+     echo "Not supported on Windows"
+     exit
+fi
+
      
 ## Intro
      echo
@@ -35,6 +53,7 @@ if ! $IT8 >/dev/null; then
      $COMM1 "$@"
    else
      $IT3
+     $COMMA
 
 fi
 
@@ -80,7 +99,18 @@ EOF
      echo
      echo
      $COMM4
-     $COMM5
+     echo
+     
+if [[ "$OSTYPE" =~ ^linux-gnu ]]; then
+     echo "$OSTYPE"
+     node resources/nativefier.js
+fi
+ 
+if [[ "$OSTYPE" =~ ^windows ]]; then
+     echo "$OSTYPE"
+     $NAT2
+fi
+
      echo
      $DV2
 
