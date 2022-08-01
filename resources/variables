@@ -20,7 +20,7 @@ CP="$(which cp)"
 NATIVEFIER="nativefier"
 DIVIDER="=================================================="
 DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
-VERSION="ALTER_desktop-0.0.6-alpha for Linux-x64"
+VERSION="ALTER_desktop-0.1.0 for Linux-x64"
 
 #### Commands
 NAT2="node nativefier.js"
