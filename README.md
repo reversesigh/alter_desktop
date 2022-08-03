@@ -6,16 +6,16 @@ ____________________
 ###### Skip if you have `npm` already installed  
 ##### Debian / Ubuntu  
 `sudo apt install npm`  
-`npm install nativefier` (or use your preferred settings)
+`npm install nativefier`  
 ##### CentOS / RHEL / Fedora  
 `sudo dnf install npm`  
-`npm install nativefier` (or use your preferred settings)
+`npm install nativefier` 
 ##### Arch / Manjaro
 `sudo pacman -S npm`  
-`npm install nativefier` (or use your preferred settings)
+`npm install nativefier` 
 ##### OpenSUSE  
 `sudo zypper install npm`  
-`npm install nativefier` (or use your preferred settings)
+`npm install nativefier` 
   
 ____________________  
   
