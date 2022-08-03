@@ -5,7 +5,7 @@ ____________________
 #### 1. Install npm  & Nativefier
 ###### Skip if you have `npm` already installed  
 ##### Debian / Ubuntu  
-`sudo apt install npm`  
+`sudo apt install npm nodejs`  
 `npm install nativefier`  
 ##### CentOS / RHEL / Fedora  
 `sudo dnf install npm`  
