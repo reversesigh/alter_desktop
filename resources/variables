@@ -23,15 +23,27 @@ DV2="echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}""
 VERSION="ALTER_desktop-0.1.0 for Linux-x64"
 
 #### Commands
-NAT2="node nativefier.js"
-COMM1="sudo npm -g install nativefier"
+NAT2="nativefier 
+--name ALTER_desktop 
+--platform linux 
+--inject resources/scrollbar.css 
+--arch x64 
+--width 1280 
+--height 720 
+--tray 
+--disable-dev-tools 
+--single-instance https://app.altermail.live/login
+--zoom 1.004
+--icon resources/alter.png
+--quiet false"
+#COMM1="sudo npm -g install nativefier"
 COMM3="$CP resources/alter.png $HOME/.local/share/icons/"
 COMM4="nativefier --version"
 COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
 COMM9="$RM -rf ALTER_desktop"
 COMM0="cat resources/variables"
-COMMA="sudo npm -g update nativefier"
+#COMMA="sudo npm -g update nativefier"
 
 #### End Message
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
