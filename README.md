@@ -6,10 +6,8 @@ ____________________
 ###### Skip if you have `npm` and `nativefier` already installed  
 ##### Fedora  
 `sudo dnf install npm`  
-`npm install nativefier` 
 ##### Arch
 `sudo pacman -S npm`  
-`npm install nativefier` 
   
 ____________________  
   
