@@ -1,5 +1,7 @@
 # ALTER_desktop  
 Unofficial Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service. Currently only supported for linux-x64
+
+Use at your own risk at the moment - as there are some oddities with npm that need resolved still. Consider this very alpha.
 ____________________  
   
 #### 1. Install npm 
