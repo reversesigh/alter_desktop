@@ -25,11 +25,12 @@ VERSION="ALTER_desktop-0.1.0 for Linux-x64"
 #### Commands
 NAT2="node nativefier.js"
 COMM3="$CP resources/alter.png $HOME/.local/share/icons/"
-#COMM4="nativefier --version"
+COMM4="nativefier --version"
 COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
 COMM9="$RM -rf ALTER_desktop"
 COMM0="cat resources/variables"
+COMMD="npm install -g nativefier"
 
 #### End Message
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
