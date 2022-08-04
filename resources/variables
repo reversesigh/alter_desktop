@@ -31,7 +31,7 @@ COMM6="$MV ALTER_desktop-linux-x64 ALTER_desktop"
 COMM7="$CP -r ALTER_desktop $HOME/.local/share/"
 COMM9="$RM -rf ALTER_desktop"
 COMM0="cat resources/variables"
-COMMA="sudo npm -g update nativefier"
+#COMMA="sudo npm -g update nativefier"
 
 #### End Message
 MSG1="ALTER_desktop is an unofficial nativefier application and not affiliated with the ALTER team"
@@ -59,7 +59,7 @@ TX1="Nativefier"
 TX2="NOT FOUND..."
 TX3="Installing Nativefier"
 TX4="Nativefier already installed. Checking for updates..."
-TX5="Checking Nanofier Version......"
+TX5="Checking Nativefier Version......"
 TX6="ALTER.desktop not found, creating and placing in $HOME/.local/share/applications"
 TX0="Injecting variables"
 
