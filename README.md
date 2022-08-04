@@ -3,7 +3,7 @@ Unofficial Nativefier desktop app for [ALTER](https://altermail.live/) private m
 ____________________  
   
 #### 1. Install npm  & Nativefier
-###### Skip if you have `npm` and / or `nativefier` already installed  
+###### Skip if you have `npm` and `nativefier` already installed  
 ##### Debian / Ubuntu  
 `sudo apt install npm nodejs`  
 `npm install nativefier`  
