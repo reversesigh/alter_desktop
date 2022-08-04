@@ -13,9 +13,6 @@ ____________________
 ##### Arch / Manjaro
 `sudo pacman -S npm`  
 `npm install nativefier` 
-##### OpenSUSE  
-`sudo zypper install npm`  
-`npm install nativefier` 
   
 ____________________  
   
