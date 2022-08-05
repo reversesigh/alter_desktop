@@ -88,7 +88,7 @@ EOF
      $DV2
      echo
      echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
-     $CP resources/alter.png $HOME/.local/share/icons/
+     $CP resources/alter.png $HOME/.local/share/icons/alter.png
      echo
      $DV2
 
