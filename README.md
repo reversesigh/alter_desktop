@@ -43,7 +43,7 @@ ____________________
   
 #### Or find ALTER in your applications list  
 <p align="center">
-<img src="resources/ALTER_applist.png">
+<img src="resources/ALTER_applist1.png">
 </P>  
   
 #### Pin ALTER to your Dash
