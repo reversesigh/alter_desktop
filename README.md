@@ -6,10 +6,14 @@ ____________________
   
 #### 1. Install npm 
 ###### Skip if you have `npm` installed  
+##### Debian
+`sudo apt install npm nodejs`
 ##### Fedora  
 `sudo dnf install npm`  
 ##### Arch
 `sudo pacman -S npm`  
+##### OpenSUSE  
+`sudo zypper install npm`  
   
 ____________________  
   
