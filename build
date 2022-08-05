@@ -12,7 +12,7 @@
      
      echo "Detecting Operating System..."
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-     echo "Not supported on macOS"
+     echo "Not supported on macOS yet"
      exit
 fi
 
@@ -21,55 +21,33 @@ if [[ "$OSTYPE" =~ ^linux-gnu ]]; then
 fi
 
 if [[ "$OSTYPE" =~ ^windows ]]; then
-     echo "Not supported on Windows"
+     echo "Not supported on Windows yet"
      exit
 fi
 
      
 ## Intro
      echo
-     echo  
-     echo -e "${BOLDGREEN}$TX0${ENDCOLOR}"
-     echo
      echo
      $DV2
      echo
-     echo -e "${RED}$VERSION${ENDCOLOR}"
+     echo -e "${RED}ALTER_desktop-0.0.6-alpha for Linux-x64${ENDCOLOR}"
      echo
      $DV2
 
 
-## Checks for Nativefier via npm. If not found then uses npm to install Nativefier.
-     echo
-     echo -e "${BOLDGREEN}$SM1${ENDCOLOR}"
-     echo
-     
-if ! $RD2 nativefier >/dev/null; then
 
-     echo -e "${CYAN}$TX1${ENDCOLOR}" "${BOLDRED}$TX2${ENDCOLOR}"
-     echo
-     echo -e "${BOLDGREEN}$TX3${ENDCOLOR}"
-     $COMM1 "$@"
-   else
-     echo -e "${BOLDGREEN}$TX4${ENDCOLOR}"
-     
-
-fi
-
-     echo
-     $DV2
-     echo
 
 ## Creates ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
      echo
 if ! $IT0 >/dev/null; then
-     echo No .desktop file detected. Creating...
+     echo -e "${RED}No .desktop file detected. Creating...${ENDCOLOR}"
      mkdir $HOME/.local/share/applications
    else
      $RM $HOME/.local/share/applications/ALTER.desktop
-     echo Removed old .desktop file and created new .desktop file.
+     echo -e "${BOLDGREEN}Removed old .desktop file and created new .desktop file.${ENDCOLOR}"
 fi   
-     echo -e "${BOLDGREEN}$SM2${ENDCOLOR}"
+     echo -e "${BOLDGREEN}Creating ALTER.desktop in $HOME/.local/share/applications/${ENDCOLOR}"
      
 cat <<EOF >> ~/.local/share/applications/ALTER.desktop
 [Desktop Entry]
@@ -77,6 +55,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
+Categories=Network;Email;Chat;InstantMessaging;FileTransfer;TrayIcon
 Exec=$HOME/.local/share/ALTER_desktop/ALTER_desktop
 Name=ALTER
 Icon=$HOME/.local/share/icons/alter.png
@@ -84,47 +63,67 @@ EOF
 
      echo
      cat $HOME/.local/share/applications/ALTER.desktop
+     
+     
+     
+     
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
      $DV2
      echo
-     echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
+     echo -e "${BOLDGREEN}Creating ALTER_desktop${ENDCOLOR}"
+     echo -e "${BOLDGREEN}If it doesn't exsit, will create .local/share${ENDCOLOR}"
      mkdir ~/.local/share
+     echo -e "${BOLDGREEN}If it doesn't exsit, will create .local/share/icons${ENDCOLOR}"
      mkdir ~/.local/share/icons
+     echo -e "${BOLDGREEN}Moving alter.png to icons folder${ENDCOLOR}"
      $CP resources/alter.png $HOME/.local/share/icons/alter.png
      echo
      $DV2
 
-## Creates wrapped web application using nativefier
+
+
+
+    
+## Installs a local version of Nativefier to interact with resources/nativefier.json
+    echo -e "${BOLDGREEN}Creating local Nativefier to build ALTER_desktop...${ENDCOLOR}"
+    npm install nativefier
+    echo -e "${BOLDGREEN}Running ALTER_desktop.js${ENDCOLOR}"
+    node resources/ALTER_desktop.js
+    echo -e "${BOLDGREEN}Built ALTER_desktop succesfully. Removing local Nativefier...${ENDCOLOR}"
+    npm uninstall nativefier
      echo
-     echo
-     echo -e "${BOLDGREEN}$TX0${ENDCOLOR}"
-     echo
-     echo
-     nativefier --version
-     node resources/nativefier.js
      echo
      echo
      $DV2
 
+
+
+
 ## Move ALTER-linux-x64 to ALTER_desktop
      echo
-     echo -e "${BOLDGREEN}$SM5${ENDCOLOR}"
+     echo -e "${BOLDGREEN}Moving ALTER_desktop-linux-x64 to ALTER_desktop${ENDCOLOR}"
      $MV ALTER_desktop-linux-x64 ALTER_desktop
      echo
 
+
+
+
 ## Copying ALTER_desktop to $HOME/.local/ALTER_desktop
-     $EP6
+     echo -e "${BOLDGREEN}Copying ALTER to $HOME/.local/share/ALTER_desktop${ENDCOLOR}"
      $CP -r ALTER_desktop $HOME/.local/share/
      $RM -rf ALTER_desktop
      echo
 
 
 
+
 ## Checks to make sure installing ALTER_desktop was a success
-if $IT9 2>/dev/null; then
-     echo WARNING ALTER_desktop not on system
-     echo -e "${CYAN}$SM7${ENDCOLOR}"
+
+
+if hash $RD1 2>/dev/null; then
+     echo -e "${RED}WARNING ALTER_desktop not on system${ENDCOLOR}"
+     echo -e "${CYAN}Please check your settings and environment${ENDCOLOR}"
      exit
      $DV2
    else
@@ -132,9 +131,17 @@ if $IT9 2>/dev/null; then
      echo
      echo
      echo
-     echo -e "${GREY}$SM8${ENDCOLOR}"
+     echo -e "${GREEN}SERACHING FOR ALTER_desktop.......${ENDCOLOR}"
+     echo
+     echo -e "${GREEN}Successfully built ALTER_desktop. Nice!${ENDCOLOR}"
+     echo
+     echo
+     echo -e "${GREY}Locate ALTER_desktop in your applications list or run $HOME/.local/share/ALTER_desktop/ALTER_desktop${ENDCOLOR}"
      echo
 fi
+
+
+
 
      $DV2
      echo
