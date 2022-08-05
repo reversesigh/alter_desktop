@@ -7,7 +7,6 @@
 ## Loading Vairables    
      echo
      source resources/variables
-     $COMM0
      echo
      echo
      
@@ -30,30 +29,30 @@ fi
 ## Intro
      echo
      echo  
-     $EP9
+     echo -e "${BOLDGREEN}$TX0${ENDCOLOR}"
      echo
      echo
      $DV2
      echo
-     $EP1
+     echo -e "${RED}$VERSION${ENDCOLOR}"
      echo
      $DV2
 
 
 ## Checks for Nativefier via npm. If not found then uses npm to install Nativefier.
      echo
-     $EP7
+     echo -e "${BOLDGREEN}$SM1${ENDCOLOR}"
      echo
      
-if ! $IT8 >/dev/null; then
+if ! $RD2 nativefier >/dev/null; then
 
-     $IT1
+     echo -e "${CYAN}$TX1${ENDCOLOR}" "${BOLDRED}$TX2${ENDCOLOR}"
      echo
-     $IT2
+     echo -e "${BOLDGREEN}$TX3${ENDCOLOR}"
      $COMM1 "$@"
    else
-     $IT3
-     $COMMA
+     echo -e "${BOLDGREEN}$TX4${ENDCOLOR}"
+     
 
 fi
 
@@ -64,12 +63,13 @@ fi
 ## Creates ALTER.desktop to local applications folder, allowing it to be discoverable in your applications list
      echo
 if ! $IT0 >/dev/null; then
-   echo $CT3
+     echo No .desktop file detected. Creating...
    else
-     $CT2
-
+     $RM $HOME/.local/share/applications/ALTER.desktop
+     echo Removed old .desktop file and created new .desktop file.
 fi   
-     $EP2
+     echo -e "${BOLDGREEN}$SM2${ENDCOLOR}"
+     
 cat <<EOF >> ~/.local/share/applications/ALTER.desktop
 [Desktop Entry]
 Encoding=UTF-8
@@ -80,80 +80,68 @@ Exec=$HOME/.local/share/ALTER_desktop/ALTER_desktop
 Name=ALTER
 Icon=$HOME/.local/share/icons/alter.png
 EOF
+
      echo
      cat $HOME/.local/share/applications/ALTER.desktop
 
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
      $DV2
      echo
-     $EP3
-     $COMM3
+     echo -e "${BOLDGREEN}$SM4${ENDCOLOR}"
+     $CP resources/alter.png $HOME/.local/share/icons/
      echo
      $DV2
 
 ## Creates wrapped web application using nativefier
-     $EP4
      echo
      echo
-     $EP8
+     echo -e "${BOLDGREEN}$TX0${ENDCOLOR}"
      echo
      echo
-     $COMM4
-     echo
-     
-if [[ "$OSTYPE" =~ ^linux-gnu ]]; then
-     echo "$OSTYPE"
+     nativefier --version
      node resources/nativefier.js
-fi
- 
-if [[ "$OSTYPE" =~ ^windows ]]; then
-     echo "$OSTYPE"
-     $NAT2
-fi
-
+     echo
      echo
      $DV2
 
 ## Move ALTER-linux-x64 to ALTER_desktop
      echo
-     $EP5
-     $COMM6
+     echo -e "${BOLDGREEN}$SM5${ENDCOLOR}"
+     $MV ALTER_desktop-linux-x64 ALTER_desktop
      echo
 
 ## Copying ALTER_desktop to $HOME/.local/ALTER_desktop
      $EP6
-     $COMM7
-     $COMM8
-     $COMM9
-echo
+     $CP -r ALTER_desktop $HOME/.local/share/
+     $RM -rf ALTER_desktop
+     echo
 
 
 
 ## Checks to make sure installing ALTER_desktop was a success
 if $IT9 2>/dev/null; then
-     $IT4
-     $IT6
+     echo WARNING ALTER_desktop not on system
+     echo -e "${CYAN}$SM7${ENDCOLOR}"
      exit
      $DV2
    else
      echo
      echo
-     $IT5
      echo
      echo
-     $IT7
+     echo -e "${GREY}$SM8${ENDCOLOR}"
      echo
 fi
 
      $DV2
      echo
-     $PM1
+     echo -e "${YELLOW}$MSG1${ENDCOLOR}"
      echo
-     $PM2
+     echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}"
      echo
-     $PM3
+     echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}"
      echo
-     $PM4
+     echo -e "${GREY}$URLS${ENDCOLOR}"
      echo
      echo
-     $PM5
+     echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
