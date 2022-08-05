@@ -64,6 +64,7 @@ fi
      echo
 if ! $IT0 >/dev/null; then
      echo No .desktop file detected. Creating...
+     mkdir $HOME/.local/share/applications
    else
      $RM $HOME/.local/share/applications/ALTER.desktop
      echo Removed old .desktop file and created new .desktop file.
