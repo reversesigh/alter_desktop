@@ -11,6 +11,8 @@
      echo
      
      echo "Detecting Operating System..."
+     
+     
 if [[ "$OSTYPE" =~ ^darwin ]]; then
      ## Installs a local version of Nativefier to interact with resources/nativefier.json
     echo -e "${BOLDGREEN}Installing local Nativefier module in current folder to build ALTER_desktop...${ENDCOLOR}"
