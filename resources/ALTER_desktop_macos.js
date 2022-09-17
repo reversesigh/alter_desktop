@@ -2,7 +2,7 @@ var nativefier = require('nativefier').default;
 
 var options = {
   name: 'ALTER_desktop',
-  targetUrl: 'https://app.altermail.live/login',
+  targetUrl: 'https://app.alter.network/login',
   platform: 'darwin',
   arch: 'x64', 
   version: '0.1.0',
@@ -18,7 +18,7 @@ var options = {
   ignoreCertificate: false,
   ignoreGpuBlacklist: false,
   enableEs3Apis: false,
-  internalUrls: '.*altermaill.live.*',
+  internalUrls: '.*app.alter.network/login.*',
   blockExternalUrls: true,
   insecure: false,
   honest: false,
