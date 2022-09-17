@@ -9,54 +9,46 @@
      source resources/variables
      echo
      echo
-     
      echo "Detecting Operating System..."
      
      
 if [[ "$OSTYPE" =~ ^darwin ]]; then
-     ## Installs a local version of Nativefier to interact with resources/nativefier.json
-    echo -e "${BOLDGREEN}Installing local Nativefier module in current folder to build ALTER_desktop...${ENDCOLOR}"
-    npm install nativefier
-    echo -e "${BOLDGREEN}Running ALTER_desktop.js${ENDCOLOR}"
-    node resources/ALTER_desktop_macos.js
-    echo -e "${BOLDGREEN}Built ALTER_desktop succesfully. Removing local Nativefier module...${ENDCOLOR}"
-    npm uninstall nativefier
 
-     echo
-     echo
-     echo
-     $DV2
-
-
-
-
+#     ## Installs a local version of Nativefier to interact with resources/nativefier.json
+#          echo -e "${BOLDGREEN}Installing local Nativefier module in current folder to build ALTER_desktop...${ENDCOLOR}"
+#          npm install nativefier
+#          echo -e "${BOLDGREEN}Running ALTER_desktop.js${ENDCOLOR}"
+#          node resources/ALTER_desktop_macos.js
+#          echo -e "${BOLDGREEN}Built ALTER_desktop succesfully. Removing local Nativefier module...${ENDCOLOR}"
+#          npm uninstall nativefier
+#     echo
+#     echo
+#     echo
+#     $DV2
 ## Move ALTER-linux-x64 to ALTER_desktop
-     echo
-     echo -e "${BOLDGREEN}Moving ALTER_desktop-linux-x64 to ALTER_desktop${ENDCOLOR}"
-     $MV ALTER_desktop-linux-x64 ALTER_desktop
-     echo
+#     echo
+#     echo -e "${BOLDGREEN}Moving ALTER_desktop-linux-x64 to ALTER_desktop${ENDCOLOR}"
+#     $MV ALTER_desktop-linux-x64 ALTER_desktop
+#     echo
+#     echo
+#     echo -e "${GREY}ALTER_desktop for macOSx64 is still in development... some elements might not work correctly.${ENDCOLOR}"
+#     echo
+#     $DV2
+#     echo
+#     echo -e "${YELLOW}$MSG1${ENDCOLOR}"
+#     echo
+#     echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}"
+#     echo
+#     echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}"
+#     echo
+#     echo -e "${GREY}$URLS${ENDCOLOR}"
+#     echo
+#     echo
+#     echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+#     exit
 
-
-
-     echo
-     echo -e "${GREY}ALTER_desktop for macOSx64 is still in development... some elements might not work correctly.${ENDCOLOR}"
-     echo
-
-
-
-
-     $DV2
-     echo
-     echo -e "${YELLOW}$MSG1${ENDCOLOR}"
-     echo
-     echo -e "${YELLOW}$MSG2${ENDCOLOR}" "${GREY}$EMAIL1${ENDCOLOR}" or "${GREY}$EMAIL2${ENDCOLOR}"
-     echo
-     echo -e "${YELLOW}$MSG3${ENDCOLOR}" "${GREY}$ALTER${ENDCOLOR}"
-     echo
-     echo -e "${GREY}$URLS${ENDCOLOR}"
-     echo
-     echo
-     echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
+     ## Not yet supported/tested
+     echo "Not yet supported on macOS"
      exit
 fi
 
@@ -72,7 +64,7 @@ if ! $IT0 >/dev/null; then
      echo -e "${BOLDGREEN}Removed old .desktop file and created new .desktop file.${ENDCOLOR}"
 fi   
      echo -e "${BOLDGREEN}Creating ALTER.desktop in $HOME/.local/share/applications/${ENDCOLOR}"
-     
+
 cat <<EOF >> ~/.local/share/applications/ALTER.desktop
 [Desktop Entry]
 Encoding=UTF-8
@@ -88,10 +80,6 @@ EOF
      echo
      cat $HOME/.local/share/applications/ALTER.desktop
      
-     
-     
-     
-
 ## Copies alter.png to your root icons folder to use the ALTER logo as the ALTER_dekstop icon
      $DV2
      echo
@@ -105,24 +93,17 @@ EOF
      echo
      $DV2
 
-
-
-
-    
 ## Installs a local version of Nativefier to interact with resources/nativefier.json
-    echo -e "${BOLDGREEN}Installing local Nativefier module in current folder to build ALTER_desktop...${ENDCOLOR}"
-    npm install nativefier
-    echo -e "${BOLDGREEN}Running ALTER_desktop.js${ENDCOLOR}"
-    node resources/ALTER_desktop.js
-    echo -e "${BOLDGREEN}Built ALTER_desktop succesfully. Removing local Nativefier module...${ENDCOLOR}"
-    npm uninstall nativefier
+     echo -e "${BOLDGREEN}Installing local Nativefier module in current folder to build ALTER_desktop...${ENDCOLOR}"
+     npm install nativefier
+     echo -e "${BOLDGREEN}Running ALTER_desktop.js${ENDCOLOR}"
+     node resources/ALTER_desktop.js
+     echo -e "${BOLDGREEN}Built ALTER_desktop succesfully. Removing local Nativefier module...${ENDCOLOR}"
+     npm uninstall nativefier
      echo
      echo
      echo
      $DV2
-
-
-
 
 ## Move ALTER-linux-x64 to ALTER_desktop
      echo
@@ -130,21 +111,13 @@ EOF
      $MV ALTER_desktop-linux-x64 ALTER_desktop
      echo
 
-
-
-
 ## Copying ALTER_desktop to $HOME/.local/ALTER_desktop
      echo -e "${BOLDGREEN}Copying ALTER to $HOME/.local/share/ALTER_desktop${ENDCOLOR}"
      $CP -r ALTER_desktop $HOME/.local/share/
      $RM -rf ALTER_desktop
      echo
 
-
-
-
 ## Checks to make sure installing ALTER_desktop was a success
-
-
 if hash $RD1 2>/dev/null; then
      echo -e "${RED}WARNING ALTER_desktop not on system${ENDCOLOR}"
      echo -e "${CYAN}Please check your settings and environment${ENDCOLOR}"
@@ -164,9 +137,6 @@ if hash $RD1 2>/dev/null; then
      echo
 fi
 
-
-
-
      $DV2
      echo
      echo -e "${YELLOW}$MSG1${ENDCOLOR}"
@@ -179,9 +149,4 @@ fi
      echo
      echo
      echo -e "${BOLDRED}$DIVIDER${ENDCOLOR}"
-fi
-
-if [[ "$OSTYPE" =~ ^windows ]]; then
-     echo "Not supported on Windows yet"
-     exit
 fi

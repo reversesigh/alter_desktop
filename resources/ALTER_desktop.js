@@ -2,9 +2,9 @@ var nativefier = require('nativefier').default;
 
 var options = {
   name: 'ALTER_desktop',
-  targetUrl: 'https://app.altermail.live/login',
+  targetUrl: 'https://app.alter.network/login',
   platform: 'linux',
-  arch: 'x64', 
+  arch: 'x64',
   version: '0.1.0',
   overwrite: true,
   asar: true,
@@ -18,12 +18,10 @@ var options = {
   ignoreCertificate: false,
   ignoreGpuBlacklist: false,
   enableEs3Apis: false,
-  internalUrls: '.*altermaill.live.*',
   blockExternalUrls: true,
   insecure: false,
-  honest: false,
   zoom: 1.004,
-  userAnget: 'honest',
+  userAgent: 'chromium',
   singleInstance: true,
   clearCache: true,
   tray: true,
@@ -31,7 +29,7 @@ var options = {
   fileDownloadOptions: {
     saveAs: true,
  },
-  webPreferences: { 
+  webPreferences: {
     spellcheck: true,
     },
 };
