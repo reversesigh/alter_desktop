@@ -1,5 +1,5 @@
 # ALTER_desktop    
-Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
+Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  ALTER_desktop is currently supported on linux (x64) and macOS (x64/arm)
   
 Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
 
@@ -24,6 +24,7 @@ ____________________
  #### 2. Install ALTER_desktop
 `git clone https://github.com/reversesigh/alter_desktop.git`  
 `cd alter_desktop`  
+`git checkout v0.3-develop`
 `chmod +x build && ./build`  
   
 ____________________  
