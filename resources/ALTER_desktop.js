@@ -5,7 +5,7 @@ var options = {
   targetUrl: 'https://app.alter.network/login',
   platform: 'linux',
   arch: 'x64',
-  version: '0.1.0',
+  version: '0.3-develop',
   overwrite: true,
   asar: true,
   icon: 'resources/alter.png',
@@ -18,17 +18,20 @@ var options = {
   ignoreCertificate: false,
   ignoreGpuBlacklist: false,
   enableEs3Apis: false,
+  internalUrls: '.*app.alter.network/login.*',
   blockExternalUrls: true,
   insecure: false,
   zoom: 1.004,
   userAgent: 'chromium',
   singleInstance: true,
-  clearCache: true,
+  clearCache: false,
   tray: true,
   disableDevTools: true,
+
   fileDownloadOptions: {
     saveAs: true,
  },
+ 
   webPreferences: {
     spellcheck: true,
     },

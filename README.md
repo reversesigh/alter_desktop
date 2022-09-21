@@ -1,5 +1,7 @@
-# ALTER_desktop  
-Unofficial Nativefier desktop app for [ALTER](https://altermail.live/) private messaging service. Currently only supported for linux-x64
+# ALTER_desktop    
+Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
+  
+Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
 
 Use at your own risk at the moment - as there are some oddities with npm that need resolved still. Consider this very alpha. You can try running this on other linux distributions, but it's not officially supported yet.  
 ____________________  
@@ -31,19 +33,12 @@ ____________________
 
 ____________________  
   
-#### 3. Known Issues
+#### 4. Known Issues
 - If ALTER_desktop is added as a favorite in GNOME and appears in your Dash, it will still open a new icon in the open window instance instead of working with the initial favorite icon.
 - Clicking "X" to minimize to tray will close your session and you will need to re-enter your keys.
 - I am unable to run ALTER_desktop on my VM instance for macOS and instead am relying on friends to test my script. Please keep in mind I am not a macOS user and feel free to let me know of any issues.
   
 ____________________
-  
-# Summary  
-Create an unofficial [ALTER](https://altermail.live/) desktop application by wrapping with [`nativefier`](https://github.com/nativefier/nativefier).  
-  
-Feel free to message me after installing and logging in to test it out: `az4jnb2ngz`  
-    
-____________________  
     
 #### Search for ALTER:  
 <p align="center">
@@ -52,7 +47,7 @@ ____________________
   
 #### Or find ALTER in your applications list  
 <p align="center">
-<img src="resources/ALTER_applist1.png">
+<img src="resources/ALTER_applist.png">
 </P>  
   
 #### Pin ALTER to your Dash

@@ -5,7 +5,7 @@ var options = {
   targetUrl: 'https://app.alter.network/login',
   platform: 'darwin',
   arch: 'x64', 
-  version: '0.2.1',
+  version: '0.3-develop',
   overwrite: true,
   asar: true,
   icon: 'resources/alter.png',
