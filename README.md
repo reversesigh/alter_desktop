@@ -14,6 +14,8 @@ ____________________
 `sudo pacman -S npm`  
 ##### OpenSUSE  
 `sudo zypper install npm`  
+##### macOS
+`brew install node`
   
 ____________________  
   
@@ -26,6 +28,13 @@ ____________________
   
 #### 3. For GNOME users. Install Tray Icons: Reloaded shell extension  
 [GNOME Extensions - Tray Icons: Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/)  
+
+____________________  
+  
+#### 3. Known Issues
+- If ALTER_desktop is added as a favorite in GNOME and appears in your Dash, it will still open a new icon in the open window instance instead of working with the initial favorite icon.
+- Clicking "X" to minimize to tray will close your session and you will need to re-enter your keys.
+- I am unable to run ALTER_desktop on my VM instance for macOS and instead am relying on friends to test my script. Please keep in mind I am not a macOS user and feel free to let me know of any issues.
   
 ____________________
   
