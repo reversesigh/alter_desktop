@@ -29,9 +29,11 @@ var options = {
   clearCache: false,
   tray: true,
   disableDevTools: true,
+  
   fileDownloadOptions: {
     saveAs: true,
  },
+ 
   webPreferences: { 
     spellcheck: true,
     },
