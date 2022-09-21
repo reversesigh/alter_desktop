@@ -4,13 +4,12 @@ var options = {
   name: 'ALTER_desktop',
   targetUrl: 'https://app.alter.network/login',
   platform: 'darwin',
-  arch: 'x64', 
+  arch: 'universal', 
   version: '0.3-develop',
   overwrite: true,
   asar: true,
   icon: 'resources/alter.png',
   inject: [ 'resources/scrollbar.css' ],
-  inject: [ 'resources/titlebar_macos.css'],
   width: 1280,
   height: 720,
   verbose: true,
@@ -33,7 +32,7 @@ var options = {
   fileDownloadOptions: {
     saveAs: true,
  },
- 
+
   webPreferences: { 
     spellcheck: true,
     },

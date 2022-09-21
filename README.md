@@ -35,8 +35,6 @@ ____________________
   
 #### 4. Known Issues
 - If ALTER_desktop is added as a favorite in GNOME and appears in your Dash, it will still open a new icon in the open window instance instead of working with the initial favorite icon.
-- Clicking "X" to minimize to tray will close your session and you will need to re-enter your keys.
-- I am unable to run ALTER_desktop on my VM instance for macOS and instead am relying on friends to test my script. Please keep in mind I am not a macOS user and feel free to let me know of any issues.
   
 ____________________
     
