@@ -19,7 +19,7 @@ ____________________
   
  #### 2. Install ALTER_desktop
 `git clone https://github.com/reversesigh/alter_desktop.git`  
-`git checkout v0.2`
+`git checkout v0.2`   
 `cd alter_desktop`  
 `chmod +x build && ./build`  
   
